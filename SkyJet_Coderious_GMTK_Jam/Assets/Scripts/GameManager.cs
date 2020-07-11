@@ -22,9 +22,9 @@ public class GameManager : MonoBehaviour
     public bool upAssigned, downAssigned, leftAssigned, rightAssigned, blockAssigned, attackAssigned;
     public KeyCode upCommand, downCommand, leftCommand, rightCommand, blockCommand, attackCommand;
 
-    bool isPaused;
+    bool isScanned;
 
-    KeyCode[] inputs = new KeyCode[30] {
+    KeyCode[] inputs = new KeyCode[26] {
         KeyCode.A, KeyCode.B, KeyCode.C, KeyCode.D,
         KeyCode.E, KeyCode.F, KeyCode.G, KeyCode.H,
         KeyCode.I, KeyCode.J, KeyCode.K, KeyCode.L,
@@ -32,8 +32,6 @@ public class GameManager : MonoBehaviour
         KeyCode.Q, KeyCode.R, KeyCode.S, KeyCode.T,
         KeyCode.U, KeyCode.V, KeyCode.W, KeyCode.X,
         KeyCode.Y, KeyCode.Z,
-        KeyCode.LeftShift, KeyCode.RightShift,
-        KeyCode.Space, KeyCode.LeftAlt
     };
 
     float movementSpeed = 2f;
@@ -54,6 +52,8 @@ public class GameManager : MonoBehaviour
         attackAssigned = false;
 
         commandPanel.SetActive(false);
+
+        isScanned = false;
 
         DefineMovement();
     }
@@ -119,12 +119,15 @@ public class GameManager : MonoBehaviour
         playerRb.MovePosition(playerRb.position + movement * Time.fixedDeltaTime);
     }
 
-    void MovePlayer()
+    private void LateUpdate()
     {
-
-
-
+        if (!isScanned)
+        {
+            AstarPath.active.Scan();
+            isScanned = true;
+        }
     }
+
 
     void DefineMovement()
     {

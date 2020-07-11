@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Pathfinding;
 
 public class CreateLevel : MonoBehaviour
 {
     public Grid grid;
-    public Tilemap walls, ground;
-    public Tile[] floorTiles;
+    public Tilemap walls, walkableGround, obstacleGround;
+    public Tile[] walkableFloorTiles, obstacleFloorTiles;
     public Tile wallTile, floorTile;
 
     public int width, height;
@@ -27,7 +28,7 @@ public class CreateLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+ 
     }
 
     void InitWalls()
@@ -65,13 +66,18 @@ public class CreateLevel : MonoBehaviour
         {
             for (int j = height / 2 - 1; j >= -height / 2; j--)
             {
-                if(Random.Range(0, 30) < 2)
+
+                if(Random.Range(0, 30) == 0)
                 {
-                    ground.SetTile(new Vector3Int(i, j, 0), floorTiles[Random.Range(0, 21)]);
+                    walkableGround.SetTile(new Vector3Int(i, j, 0), walkableFloorTiles[Random.Range(0, walkableFloorTiles.Length)]);
+                }
+                else if(Random.Range(0, 30) == 1)
+                {
+                    obstacleGround.SetTile(new Vector3Int(i, j, 0), obstacleFloorTiles[Random.Range(0, obstacleFloorTiles.Length)]);
                 }
                 else
                 {
-                    ground.SetTile(new Vector3Int(i, j, 0), floorTile);
+                    walkableGround.SetTile(new Vector3Int(i, j, 0), floorTile);
                 }
             }
         }
