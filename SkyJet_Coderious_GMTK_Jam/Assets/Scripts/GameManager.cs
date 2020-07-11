@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +10,10 @@ public class GameManager : MonoBehaviour
     public Sprite[] backgrounds;
 
     int up, down, left, right;
+
+    public float timeLeft = 30f;
+
+    public TextMeshProUGUI uiTimeLeft;
 
 
 
@@ -32,7 +37,6 @@ public class GameManager : MonoBehaviour
         DefineMovement();
         backgroundRenderer.sprite = backgrounds[0];
         backgroundRenderer.size = new Vector2(1920, 1080);
-
     }
 
 
@@ -64,6 +68,9 @@ public class GameManager : MonoBehaviour
         {
             movement = Vector2.zero;
         }
+
+        timeLeft -= Time.deltaTime;
+        uiTimeLeft.text = timeLeft.ToString();
 
     }
 
