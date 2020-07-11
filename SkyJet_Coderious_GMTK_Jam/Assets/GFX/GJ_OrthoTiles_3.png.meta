@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a9cdc7f9f81d084b883e5bc73f7a116
+guid: 39db3d8959932aa43a538a5ead6ea6a1
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -41,6 +41,84 @@ TextureImporter:
   - first:
       213: 5842921096833875266
     second: GJ_OrthoTiles_2_12
+  - first:
+      213: -2048624769898805890
+    second: GJ_OrthoTiles_3_0
+  - first:
+      213: -7879842900982059546
+    second: GJ_OrthoTiles_3_1
+  - first:
+      213: -3548326330509120167
+    second: GJ_OrthoTiles_3_2
+  - first:
+      213: -3723734725871428520
+    second: GJ_OrthoTiles_3_3
+  - first:
+      213: 5586451892862521932
+    second: GJ_OrthoTiles_3_4
+  - first:
+      213: -5214238946158685370
+    second: GJ_OrthoTiles_3_5
+  - first:
+      213: -6032059331262232158
+    second: GJ_OrthoTiles_3_6
+  - first:
+      213: -8117767672886970305
+    second: GJ_OrthoTiles_3_7
+  - first:
+      213: 1661102963784009725
+    second: GJ_OrthoTiles_3_8
+  - first:
+      213: 3377733222997649694
+    second: GJ_OrthoTiles_3_9
+  - first:
+      213: 6891812762095105426
+    second: GJ_OrthoTiles_3_10
+  - first:
+      213: -5613322453108381466
+    second: GJ_OrthoTiles_3_11
+  - first:
+      213: -2094595639246918758
+    second: GJ_OrthoTiles_3_12
+  - first:
+      213: -1813798139335571471
+    second: GJ_OrthoTiles_3_0
+  - first:
+      213: 7876720204053453629
+    second: GJ_OrthoTiles_3_1
+  - first:
+      213: 927754176899985282
+    second: GJ_OrthoTiles_3_2
+  - first:
+      213: -490305314386459788
+    second: GJ_OrthoTiles_3_3
+  - first:
+      213: 5329713182025408350
+    second: GJ_OrthoTiles_3_4
+  - first:
+      213: -2977512770394793927
+    second: GJ_OrthoTiles_3_5
+  - first:
+      213: 6495161101344117751
+    second: GJ_OrthoTiles_3_6
+  - first:
+      213: 4425686497127749732
+    second: GJ_OrthoTiles_3_7
+  - first:
+      213: 1085029800814807265
+    second: GJ_OrthoTiles_3_8
+  - first:
+      213: -2955475980545899728
+    second: GJ_OrthoTiles_3_9
+  - first:
+      213: -6055830862006493537
+    second: GJ_OrthoTiles_3_10
+  - first:
+      213: 7699612764361767656
+    second: GJ_OrthoTiles_3_11
+  - first:
+      213: 4506541939882924151
+    second: GJ_OrthoTiles_3_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -84,7 +162,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -150,7 +228,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_0
+      name: GJ_OrthoTiles_3_0
       rect:
         serializedVersion: 2
         x: 10
@@ -164,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0c1a861e8f114610800000000000000
-      internalID: 1603597637444574222
+      spriteID: 1f783a2c33814d6e0800000000000000
+      internalID: -1813798139335571471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_1
+      name: GJ_OrthoTiles_3_1
       rect:
         serializedVersion: 2
         x: 175
@@ -185,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a55af9da23a72ac0800000000000000
-      internalID: -3879953149515377246
+      spriteID: d3b9fbdfa4bbf4d60800000000000000
+      internalID: 7876720204053453629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_2
+      name: GJ_OrthoTiles_3_2
       rect:
         serializedVersion: 2
         x: 338
@@ -206,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8a8cc2ca43b016a0800000000000000
-      internalID: -6480482730109007221
+      spriteID: 28f2209228b00ec00800000000000000
+      internalID: 927754176899985282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_3
+      name: GJ_OrthoTiles_3_3
       rect:
         serializedVersion: 2
         x: 498
@@ -227,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98d128affd9e16d50800000000000000
-      internalID: 6728916466458041737
+      spriteID: 47342801ae51239f0800000000000000
+      internalID: -490305314386459788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_4
+      name: GJ_OrthoTiles_3_4
       rect:
         serializedVersion: 2
         x: 10
@@ -248,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f7200e3dbdf987a0800000000000000
-      internalID: -6374284808335382540
+      spriteID: e5f5759a6e1f6f940800000000000000
+      internalID: 5329713182025408350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_5
+      name: GJ_OrthoTiles_3_5
       rect:
         serializedVersion: 2
         x: 173
@@ -269,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66514a4379cbf3560800000000000000
-      internalID: 7295757278972745062
+      spriteID: 938dd6e29efbda6d0800000000000000
+      internalID: -2977512770394793927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_6
+      name: GJ_OrthoTiles_3_6
       rect:
         serializedVersion: 2
         x: 333
@@ -290,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 192bb486840d12730800000000000000
-      internalID: 3972685355723502225
+      spriteID: 7f31d8cdb92732a50800000000000000
+      internalID: 6495161101344117751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_7
+      name: GJ_OrthoTiles_3_7
       rect:
         serializedVersion: 2
         x: 499
@@ -311,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 951abef40ebc49050800000000000000
-      internalID: 5806489983861367129
+      spriteID: 468da8cbb623b6d30800000000000000
+      internalID: 4425686497127749732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_8
+      name: GJ_OrthoTiles_3_8
       rect:
         serializedVersion: 2
         x: 11
@@ -332,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0abc8332d44a12dd0800000000000000
-      internalID: -2512546465885664352
+      spriteID: 1e88748eadcce0f00800000000000000
+      internalID: 1085029800814807265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_9
+      name: GJ_OrthoTiles_3_9
       rect:
         serializedVersion: 2
         x: 134
@@ -353,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15baa9d5991d17800800000000000000
-      internalID: 608497881302346577
+      spriteID: 033cc55214a0cf6d0800000000000000
+      internalID: -2955475980545899728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_10
+      name: GJ_OrthoTiles_3_10
       rect:
         serializedVersion: 2
         x: 256
@@ -374,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5e29b51c08114ca0800000000000000
-      internalID: -6034515585516622244
+      spriteID: f9e514a8aed55fba0800000000000000
+      internalID: -6055830862006493537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_11
+      name: GJ_OrthoTiles_3_11
       rect:
         serializedVersion: 2
         x: 377
@@ -395,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c934b5799e0a47a0800000000000000
-      internalID: -6392280668831467068
+      spriteID: 8eab8dfc3058ada60800000000000000
+      internalID: 7699612764361767656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_OrthoTiles_2_12
+      name: GJ_OrthoTiles_3_12
       rect:
         serializedVersion: 2
         x: 500
@@ -416,8 +494,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24d3b6bc7c9361150800000000000000
-      internalID: 5842921096833875266
+      spriteID: 7781f1484047a8e30800000000000000
+      internalID: 4506541939882924151
       vertices: []
       indices: 
       edges: []

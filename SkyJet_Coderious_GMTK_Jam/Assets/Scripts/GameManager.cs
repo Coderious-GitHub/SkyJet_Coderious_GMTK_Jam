@@ -15,9 +15,11 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI uiTimeLeft;
 
-
-
     Vector2 movement;
+
+    bool c, t, r, l;
+
+    bool isPaused;
 
     KeyCode[] inputs = new KeyCode[26] {
         KeyCode.A, KeyCode.B, KeyCode.C, KeyCode.D,
@@ -34,6 +36,13 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        c = false;
+        t = false;
+        r = false;
+        l = false;
+
+        isPaused = false;
+
         DefineMovement();
         backgroundRenderer.sprite = backgrounds[0];
         backgroundRenderer.size = new Vector2(1920, 1080);
@@ -44,6 +53,20 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(isPaused)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+
+        if(timeLeft < 0)
+        {
+            //Game Over
+        }
+
         if (Input.GetKeyDown(inputs[up]))
         {
             movement.y = movementSpeed;
@@ -88,14 +111,60 @@ public class GameManager : MonoBehaviour
 
     void DefineMovement()
     {
+
         up = Random.Range(0, 26);
         Debug.Log("Up: " + inputs[up]);
+
         down = Random.Range(0, 26);
+
+        while(down == up)
+        {
+            down = Random.Range(0, 26);
+        }
         Debug.Log("Down: " + inputs[down]);
+
         left = Random.Range(0, 26);
+
+        while (left == up || left == down)
+        {
+            left = Random.Range(0, 26);
+        }
+
         Debug.Log("Left: " + inputs[left]);
+
         right = Random.Range(0, 26);
+
+        while (right == up || right == down || right == left)
+        {
+            right = Random.Range(0, 26);
+        }
+
         Debug.Log("Right: " + inputs[right]);
+
+
+        if(inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C)
+        {
+            c = true;
+            isPaused = true;
+        }
+
+        if (inputs[up] == KeyCode.T || inputs[down] == KeyCode.T || inputs[left] == KeyCode.T || inputs[right] == KeyCode.T)
+        {
+            t = true;
+            isPaused = true;
+        }
+
+        if (inputs[up] == KeyCode.R || inputs[down] == KeyCode.R || inputs[left] == KeyCode.R || inputs[right] == KeyCode.R)
+        {
+            r = true;
+            isPaused = true;
+        }
+
+        if (inputs[up] == KeyCode.L || inputs[down] == KeyCode.L || inputs[left] == KeyCode.L || inputs[right] == KeyCode.L)
+        {
+            l = true;
+            isPaused = true;
+        }
     }
 
 }
