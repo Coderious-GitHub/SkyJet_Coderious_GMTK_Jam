@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -21,6 +22,12 @@ public class GameManager : MonoBehaviour
     bool c, t, r, l;
     public bool upAssigned, downAssigned, leftAssigned, rightAssigned, blockAssigned, attackAssigned;
     public KeyCode upCommand, downCommand, leftCommand, rightCommand, blockCommand, attackCommand;
+
+    public TextMeshProUGUI upKey, downKey, leftKey, rightKey, blockKey, attackKey;
+
+    public Light2D[] lights = new Light2D[4];
+
+    public AnimationCurve curve;
 
     bool isScanned;
 
@@ -77,31 +84,37 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(inputs[up]) || (upAssigned && Input.GetKeyDown(upCommand)))
         {
             movement.y = movementSpeed;
+            upKey.text = inputs[up].ToString();
         }
 
         if (Input.GetKeyDown(inputs[down]) || (downAssigned && Input.GetKeyDown(downCommand)))
         {
             movement.y = -movementSpeed;
+            downKey.text = inputs[down].ToString();
         }
 
         if (Input.GetKeyDown(inputs[left]) || (leftAssigned && Input.GetKeyDown(leftCommand)))
         {
-            movement.x = -movementSpeed;
+            movement.x = -movementSpeed; 
+            leftKey.text = inputs[left].ToString();
         }
 
         if (Input.GetKeyDown(inputs[right]) || (rightAssigned && Input.GetKeyDown(rightCommand)))
         {
             movement.x = movementSpeed;
+            rightKey.text = inputs[right].ToString();
         }
 
         if (Input.GetKeyDown(inputs[block]) || (blockAssigned && Input.GetKeyDown(blockCommand)))
         {
             //block action
+            blockKey.text = inputs[block].ToString();
         }
 
         if (Input.GetKeyDown(inputs[attack]) || (attackAssigned && Input.GetKeyDown(attackCommand)))
         {
             //attack action
+            attackKey.text = inputs[attack].ToString();
         }
 
         if (!Input.anyKey)
@@ -111,6 +124,8 @@ public class GameManager : MonoBehaviour
 
         timeLeft -= Time.deltaTime;
         uiTimeLeft.text = timeLeft.ToString();
+
+        ChangeLight();
 
     }
 
@@ -224,6 +239,14 @@ public class GameManager : MonoBehaviour
             l = true;
             Time.timeScale = 0;
             commandPanel.SetActive(true);
+        }
+    }
+
+    void ChangeLight()
+    {
+        foreach(Light2D light in lights)
+        {
+            light.intensity = Mathf.Abs(Mathf.Cos(Time.realtimeSinceStartup)) / 4f + 0.25f;
         }
     }
 
