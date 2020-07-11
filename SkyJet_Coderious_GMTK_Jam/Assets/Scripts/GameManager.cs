@@ -10,8 +10,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject commandPanel;
 
-
-    int up, down, left, right;
+    int up, down, left, right, block, attack;
 
     public float timeLeft = 30f;
 
@@ -20,20 +19,24 @@ public class GameManager : MonoBehaviour
     Vector2 movement;
 
     bool c, t, r, l;
+    public bool upAssigned, downAssigned, leftAssigned, rightAssigned, blockAssigned, attackAssigned;
+    public KeyCode upCommand, downCommand, leftCommand, rightCommand, blockCommand, attackCommand;
 
     bool isPaused;
 
-    KeyCode[] inputs = new KeyCode[26] {
+    KeyCode[] inputs = new KeyCode[30] {
         KeyCode.A, KeyCode.B, KeyCode.C, KeyCode.D,
         KeyCode.E, KeyCode.F, KeyCode.G, KeyCode.H,
         KeyCode.I, KeyCode.J, KeyCode.K, KeyCode.L,
         KeyCode.M, KeyCode.N, KeyCode.O, KeyCode.P,
         KeyCode.Q, KeyCode.R, KeyCode.S, KeyCode.T,
         KeyCode.U, KeyCode.V, KeyCode.W, KeyCode.X,
-        KeyCode.Y, KeyCode.Z
+        KeyCode.Y, KeyCode.Z,
+        KeyCode.LeftShift, KeyCode.RightShift,
+        KeyCode.Space, KeyCode.LeftAlt
     };
 
-    float movementSpeed = 200f;
+    float movementSpeed = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +45,13 @@ public class GameManager : MonoBehaviour
         t = false;
         r = false;
         l = false;
+
+        upAssigned = false;
+        downAssigned = false;
+        leftAssigned = false;
+        rightAssigned = false;
+        blockAssigned = false;
+        attackAssigned = false;
 
         commandPanel.SetActive(false);
 
@@ -59,24 +69,39 @@ public class GameManager : MonoBehaviour
             //Game Over
         }
 
-        if (Input.GetKeyDown(inputs[up]))
+        if(c && t && r && l)
+        {
+            //End room
+        }
+
+        if (Input.GetKeyDown(inputs[up]) || (upAssigned && Input.GetKeyDown(upCommand)))
         {
             movement.y = movementSpeed;
         }
 
-        if (Input.GetKeyDown(inputs[down]))
+        if (Input.GetKeyDown(inputs[down]) || (downAssigned && Input.GetKeyDown(downCommand)))
         {
             movement.y = -movementSpeed;
         }
 
-        if (Input.GetKeyDown(inputs[left]))
+        if (Input.GetKeyDown(inputs[left]) || (leftAssigned && Input.GetKeyDown(leftCommand)))
         {
             movement.x = -movementSpeed;
         }
 
-        if (Input.GetKeyDown(inputs[right]))
+        if (Input.GetKeyDown(inputs[right]) || (rightAssigned && Input.GetKeyDown(rightCommand)))
         {
             movement.x = movementSpeed;
+        }
+
+        if (Input.GetKeyDown(inputs[block]) || (blockAssigned && Input.GetKeyDown(blockCommand)))
+        {
+            //block action
+        }
+
+        if (Input.GetKeyDown(inputs[attack]) || (attackAssigned && Input.GetKeyDown(attackCommand)))
+        {
+            //attack action
         }
 
         if (!Input.anyKey)
@@ -104,37 +129,73 @@ public class GameManager : MonoBehaviour
     void DefineMovement()
     {
 
-        up = Random.Range(0, 26);
-        Debug.Log("Up: " + inputs[up]);
-
-        down = Random.Range(0, 26);
-
-        while(down == up)
+        if(!upAssigned)
         {
-            down = Random.Range(0, 26);
-        }
-        Debug.Log("Down: " + inputs[down]);
-
-        left = Random.Range(0, 26);
-
-        while (left == up || left == down)
-        {
-            left = Random.Range(0, 26);
+            up = Random.Range(0, inputs.Length);
+            Debug.Log("Up: " + inputs[up]);
         }
 
-        Debug.Log("Left: " + inputs[left]);
-
-        right = Random.Range(0, 26);
-
-        while (right == up || right == down || right == left)
+        if(!downAssigned)
         {
-            right = Random.Range(0, 26);
+            down = Random.Range(0, inputs.Length);
+
+            while (down == up)
+            {
+                down = Random.Range(0, inputs.Length);
+            }
+            Debug.Log("Down: " + inputs[down]);
         }
 
-        Debug.Log("Right: " + inputs[right]);
+        if(!leftAssigned)
+        {
+            left = Random.Range(0, inputs.Length);
+
+            while (left == up || left == down)
+            {
+                left = Random.Range(0, inputs.Length);
+            }
+
+            Debug.Log("Left: " + inputs[left]);
+        }
+
+        if(!rightAssigned)
+        {
+            right = Random.Range(0, inputs.Length);
+
+            while (right == up || right == down || right == left)
+            {
+                right = Random.Range(0, inputs.Length);
+            }
+
+            Debug.Log("Right: " + inputs[right]);
+        }
+
+        if (!blockAssigned)
+        {
+            block = Random.Range(0, inputs.Length);
+
+            while (block == up || block == down || block == left || block == right)
+            {
+                block = Random.Range(0, inputs.Length);
+            }
+
+            Debug.Log("Block: " + inputs[block]);
+        }
+
+        if (!attackAssigned)
+        {
+            attack = Random.Range(0, inputs.Length);
+
+            while (attack == up || attack == down || attack == left || attack == right || attack == block)
+            {
+                attack = Random.Range(0, inputs.Length);
+            }
+
+            Debug.Log("Attack: " + inputs[attack]);
+        }
 
 
-        if(inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C)
+        if (inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C)
         {
             c = true;
             Time.timeScale = 0;

@@ -8,76 +8,123 @@ public class DefineKeys : MonoBehaviour
     public TextMeshProUGUI buttonUp, buttonDown, buttonLeft, buttonRight, buttonBlock, buttonAttack;
     public GameObject panel;
 
+    GameManager gameManager;
+
+    bool choiceMade;
+
+    private void Start()
+    {
+        choiceMade = false;
+        gameManager = FindObjectOfType<GameManager>();
+    }
+
+
     public void AssignKeyUp()
     {
-        foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
+        if(buttonUp.text == "" && !choiceMade)
         {
-            if (Input.GetKey(vKey))
+            foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
-                buttonUp.text = vKey.ToString();
+                if (Input.GetKey(vKey))
+                {
+                    buttonUp.text = vKey.ToString();
+                    choiceMade = true;
+                    gameManager.upCommand = vKey;
+                    gameManager.upAssigned = true;
+                }
             }
         }
     }
 
     public void AssignKeyDown()
     {
-        foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
+        if (buttonDown.text == "" && !choiceMade)
         {
-            if (Input.GetKey(vKey))
+            foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
-                buttonDown.text = vKey.ToString();
+                if (Input.GetKey(vKey))
+                {
+                    buttonDown.text = vKey.ToString();
+                    choiceMade = true;
+                    gameManager.downCommand = vKey;
+                    gameManager.downAssigned = true;
+                }
             }
         }
     }
 
     public void AssignKeyLeft()
     {
-        foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
+        if (buttonLeft.text == "" && !choiceMade)
         {
-            if (Input.GetKey(vKey))
+            foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
-                buttonLeft.text = vKey.ToString();
+                if (Input.GetKey(vKey))
+                {
+                    buttonLeft.text = vKey.ToString();
+                    choiceMade = true;
+                    gameManager.leftCommand = vKey;
+                    gameManager.leftAssigned = true;
+                }
             }
         }
     }
 
     public void AssignKeyRight()
     {
-        foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
+        if (buttonRight.text == "" && !choiceMade)
         {
-            if (Input.GetKey(vKey))
+            foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
-                buttonRight.text = vKey.ToString();
+                if (Input.GetKey(vKey))
+                {
+                    buttonRight.text = vKey.ToString();
+                    choiceMade = true;
+                    gameManager.rightCommand = vKey;
+                    gameManager.rightAssigned = true;
+                }
             }
         }
     }
 
     public void AssignKeyBlock()
     {
-        foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
+        if (buttonBlock.text == "" && !choiceMade)
         {
-            if (Input.GetKey(vKey))
+            foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
-                buttonBlock.text = vKey.ToString();
+                if (Input.GetKey(vKey))
+                {
+                    buttonBlock.text = vKey.ToString();
+                    choiceMade = true;
+                    gameManager.blockCommand = vKey;
+                    gameManager.blockAssigned = true;
+                }
             }
         }
     }
 
     public void AssignKeyAttack()
     {
-        foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
+        if (buttonAttack.text == "" && !choiceMade)
         {
-            if (Input.GetKey(vKey))
+            foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
-                buttonAttack.text = vKey.ToString();
+                if (Input.GetKey(vKey))
+                {
+                    buttonAttack.text = vKey.ToString();
+                    choiceMade = true;
+                    gameManager.attackCommand = vKey;
+                    gameManager.attackAssigned = true;
+                }
             }
         }
     }
 
     public void Validate()
     {
+        choiceMade = false;
         Time.timeScale = 1;
         panel.SetActive(false);
-        Debug.Log(Time.timeScale);
     }
 }
