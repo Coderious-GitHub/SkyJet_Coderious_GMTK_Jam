@@ -1,67 +1,133 @@
 fileFormatVersion: 2
-guid: dd7d3004415c904419ca56db2166e573
+guid: 4da166147add7ef4a971897071236efc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7345837168380122996
-    second: GJ_BrownVariation_Tiles_0
+      213: -4915870486701262164
+    second: GJ_BrownVariations_Tiles_128_0
   - first:
-      213: -4152529004215887619
-    second: GJ_BrownVariation_Tiles_1
+      213: -1525737000231248999
+    second: GJ_BrownVariations_Tiles_128_1
   - first:
-      213: -8173669587558497318
-    second: GJ_BrownVariation_Tiles_2
+      213: 7727426340642458027
+    second: GJ_BrownVariations_Tiles_128_2
   - first:
-      213: -7579347772913076552
-    second: GJ_BrownVariation_Tiles_3
+      213: -9195483815897987413
+    second: GJ_BrownVariations_Tiles_128_3
   - first:
-      213: 5407857930513025467
-    second: GJ_BrownVariation_Tiles_4
+      213: 485357847204121535
+    second: GJ_BrownVariations_Tiles_128_4
   - first:
-      213: -7780408766402945318
-    second: GJ_BrownVariation_Tiles_5
+      213: 1151096875197009104
+    second: GJ_BrownVariations_Tiles_128_5
   - first:
-      213: -5546078193857298699
-    second: GJ_BrownVariation_Tiles_6
+      213: 7005212467867149810
+    second: GJ_BrownVariations_Tiles_128_6
   - first:
-      213: -2669962932550731945
-    second: GJ_BrownVariation_Tiles_7
+      213: -7159077530988302825
+    second: GJ_BrownVariations_Tiles_128_7
   - first:
-      213: 46241945453636514
-    second: GJ_BrownVariation_Tiles_8
+      213: 8859578121111716592
+    second: GJ_BrownVariations_Tiles_128_8
   - first:
-      213: 5583724572304863414
-    second: GJ_BrownVariation_Tiles_9
+      213: 8843199172472756410
+    second: GJ_BrownVariations_Tiles_128_9
   - first:
-      213: -6173012442916468388
-    second: GJ_BrownVariation_Tiles_10
+      213: 7556162556682647335
+    second: GJ_BrownVariations_Tiles_128_10
   - first:
-      213: -8641755885504111653
-    second: GJ_BrownVariation_Tiles_11
+      213: 8314374817492425350
+    second: GJ_BrownVariations_Tiles_128_11
   - first:
-      213: -2615313920936627637
-    second: GJ_BrownVariation_Tiles_12
+      213: -962138703755047442
+    second: GJ_BrownVariations_Tiles_128_12
   - first:
-      213: 4265348564211398572
-    second: GJ_BrownVariation_Tiles_13
+      213: 1101088330464269288
+    second: GJ_BrownVariations_Tiles_128_13
   - first:
-      213: 946596998778337197
-    second: GJ_BrownVariation_Tiles_14
+      213: 3761516370804339671
+    second: GJ_BrownVariations_Tiles_128_14
   - first:
-      213: -6879981961401893576
-    second: GJ_BrownVariation_Tiles_15
+      213: 8050488431615387933
+    second: GJ_BrownVariations_Tiles_128_15
   - first:
-      213: 4333120735803494745
-    second: GJ_BrownVariation_Tiles_16
+      213: -6949628827093081393
+    second: GJ_BrownVariations_Tiles_128_16
   - first:
-      213: 117408119395787561
-    second: GJ_BrownVariation_Tiles_17
+      213: 7794382998702882098
+    second: GJ_BrownVariations_Tiles_128_17
   - first:
-      213: -6393003006676387534
-    second: GJ_BrownVariation_Tiles_18
+      213: -3028009453417953656
+    second: GJ_BrownVariations_Tiles_128_18
   - first:
-      213: 6306497338947349972
-    second: GJ_BrownVariation_Tiles_19
+      213: -4968155433349119028
+    second: GJ_BrownVariations_Tiles_128_19
+  - first:
+      213: 1839198124133740862
+    second: GJ_BrownVariations_Tiles_128_20
+  - first:
+      213: 9174423197754934340
+    second: GJ_BrownVariations_Tiles_128_0
+  - first:
+      213: 7746074260575154678
+    second: GJ_BrownVariations_Tiles_128_1
+  - first:
+      213: -3816631210570552433
+    second: GJ_BrownVariations_Tiles_128_2
+  - first:
+      213: 6742016617208724071
+    second: GJ_BrownVariations_Tiles_128_3
+  - first:
+      213: 869402849090654004
+    second: GJ_BrownVariations_Tiles_128_4
+  - first:
+      213: 6893767131585753936
+    second: GJ_BrownVariations_Tiles_128_5
+  - first:
+      213: 6538906630651668556
+    second: GJ_BrownVariations_Tiles_128_6
+  - first:
+      213: 716306916577743569
+    second: GJ_BrownVariations_Tiles_128_7
+  - first:
+      213: 3184855033121380571
+    second: GJ_BrownVariations_Tiles_128_8
+  - first:
+      213: -6705897830590714511
+    second: GJ_BrownVariations_Tiles_128_9
+  - first:
+      213: 2017873775324936096
+    second: GJ_BrownVariations_Tiles_128_10
+  - first:
+      213: -6047590941771228707
+    second: GJ_BrownVariations_Tiles_128_11
+  - first:
+      213: 4736072613952189226
+    second: GJ_BrownVariations_Tiles_128_12
+  - first:
+      213: 529131283309173462
+    second: GJ_BrownVariations_Tiles_128_13
+  - first:
+      213: -8676649118196912497
+    second: GJ_BrownVariations_Tiles_128_14
+  - first:
+      213: 767793408832776987
+    second: GJ_BrownVariations_Tiles_128_15
+  - first:
+      213: -1602597498298557085
+    second: GJ_BrownVariations_Tiles_128_16
+  - first:
+      213: -3666651262354017444
+    second: GJ_BrownVariations_Tiles_128_17
+  - first:
+      213: -164429226711026135
+    second: GJ_BrownVariations_Tiles_128_18
+  - first:
+      213: -2808067090115937141
+    second: GJ_BrownVariations_Tiles_128_19
+  - first:
+      213: 4179360729998905082
+    second: GJ_BrownVariations_Tiles_128_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -91,7 +157,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -105,7 +171,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -159,328 +225,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_0
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 355
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47798271cf7a1f560800000000000000
-      internalID: 7345837168380122996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 355
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df894382fd04f56c0800000000000000
-      internalID: -4152529004215887619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_2
-      rect:
-        serializedVersion: 2
-        x: 244
-        y: 357
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad3892ae0da419e80800000000000000
-      internalID: -8173669587558497318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_3
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 357
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b63e5e8b5fb0d690800000000000000
-      internalID: -7579347772913076552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_4
-      rect:
-        serializedVersion: 2
-        x: 473
-        y: 358
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb90200c2229c0b40800000000000000
-      internalID: 5407857930513025467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_5
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 242
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ade9737037f660490800000000000000
-      internalID: -7780408766402945318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_6
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 242
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fe789e544f5803b0800000000000000
-      internalID: -5546078193857298699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_7
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 244
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7577ad1ebd262fad0800000000000000
-      internalID: -2669962932550731945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_8
-      rect:
-        serializedVersion: 2
-        x: 359
-        y: 243
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2abac7cedc844a000800000000000000
-      internalID: 46241945453636514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_9
-      rect:
-        serializedVersion: 2
-        x: 473
-        y: 244
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b0f9d72aef5d7d40800000000000000
-      internalID: 5583724572304863414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_10
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 126
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c59c5e1a3ed055aa0800000000000000
-      internalID: -6173012442916468388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_11
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 126
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdbd2e0eec0521880800000000000000
-      internalID: -8641755885504111653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_12
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 126
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b42307e68d984bbd0800000000000000
-      internalID: -2615313920936627637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_13
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 126
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca7fa0d9bef813b30800000000000000
-      internalID: 4265348564211398572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_14
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 125
-        width: 109
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da732a184fcf22d00800000000000000
-      internalID: 946596998778337197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_15
+      name: GJ_BrownVariations_Tiles_128_0
       rect:
         serializedVersion: 2
         x: 9
-        y: 12
-        width: 109
-        height: 109
+        y: 552
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83d7b899bd46580a0800000000000000
-      internalID: -6879981961401893576
+      spriteID: 44449494a49125f70800000000000000
+      internalID: 9174423197754934340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_16
+      name: GJ_BrownVariations_Tiles_128_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 12
-        width: 109
-        height: 109
+        x: 142
+        y: 552
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9515272f956522c30800000000000000
-      internalID: 4333120735803494745
+      spriteID: 6f1f061ef759f7b60800000000000000
+      internalID: 7746074260575154678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_17
+      name: GJ_BrownVariations_Tiles_128_2
       rect:
         serializedVersion: 2
-        x: 241
-        y: 12
-        width: 109
-        height: 109
+        x: 275
+        y: 551
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9232552001e11a100800000000000000
-      internalID: 117408119395787561
+      spriteID: f8be547a22a980bc0800000000000000
+      internalID: -3816631210570552433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_18
+      name: GJ_BrownVariations_Tiles_128_3
       rect:
         serializedVersion: 2
-        x: 356
-        y: 13
-        width: 109
-        height: 109
+        x: 408
+        y: 551
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,20 +302,356 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 239bc0313ad7747a0800000000000000
-      internalID: -6393003006676387534
+      spriteID: 76ab1828464709d50800000000000000
+      internalID: 6742016617208724071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariation_Tiles_19
+      name: GJ_BrownVariations_Tiles_128_4
       rect:
         serializedVersion: 2
-        x: 473
+        x: 540
+        y: 551
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fc2c2f84db01c00800000000000000
+      internalID: 869402849090654004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_5
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 420
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053be627ea49baf50800000000000000
+      internalID: 6893767131585753936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 419
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48607b9fecdeba50800000000000000
+      internalID: 6538906630651668556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_7
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 417
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d295c07855d0f900800000000000000
+      internalID: 716306916577743569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_8
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 416
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8905e47c0e23c20800000000000000
+      internalID: 3184855033121380571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_9
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 415
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17de393d37ddfe2a0800000000000000
+      internalID: -6705897830590714511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 285
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7b1dbe18de00c10800000000000000
+      internalID: 2017873775324936096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 285
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd91bd87414a21ca0800000000000000
+      internalID: -6047590941771228707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_12
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 282
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23731913f8e9b140800000000000000
+      internalID: 4736072613952189226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_13
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 281
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da9035491ad75700800000000000000
+      internalID: 529131283309173462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_14
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 281
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8eaa2d0999569780800000000000000
+      internalID: -8676649118196912497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 153
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b2d529900c7aa00800000000000000
+      internalID: 767793408832776987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d1cf3f01e62c9e0800000000000000
+      internalID: -1602597498298557085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_17
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 146
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53b6288a107d1dc0800000000000000
+      internalID: -3666651262354017444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_18
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 146
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926723f4d74d7bdf0800000000000000
+      internalID: -164429226711026135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_19
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 148
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cbc2cfbddb709d0800000000000000
+      internalID: -2808067090115937141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_BrownVariations_Tiles_128_20
+      rect:
+        serializedVersion: 2
+        x: 276
         y: 11
-        width: 109
-        height: 109
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,8 +659,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dd27e0aaed258750800000000000000
-      internalID: 6306497338947349972
+      spriteID: afe4dc3d072100a30800000000000000
+      internalID: 4179360729998905082
       vertices: []
       indices: 
       edges: []
@@ -581,7 +668,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c15719e782ceefd49959b69ae6cd47bf
+    spriteID: adf94db865c4b6e4a9e9cf3cf28e26d2
     internalID: 0
     vertices: []
     indices: 
