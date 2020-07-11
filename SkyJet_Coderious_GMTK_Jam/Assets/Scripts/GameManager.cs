@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public Rigidbody2D playerRb;
-    public SpriteRenderer backgroundRenderer;
-    public Sprite[] backgrounds;
+
+    public GameObject commandPanel;
+
 
     int up, down, left, right;
 
@@ -41,11 +43,9 @@ public class GameManager : MonoBehaviour
         r = false;
         l = false;
 
-        isPaused = false;
+        commandPanel.SetActive(false);
 
         DefineMovement();
-        backgroundRenderer.sprite = backgrounds[0];
-        backgroundRenderer.size = new Vector2(1920, 1080);
     }
 
 
@@ -53,14 +53,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPaused)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
 
         if(timeLeft < 0)
         {
@@ -145,25 +137,29 @@ public class GameManager : MonoBehaviour
         if(inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C)
         {
             c = true;
-            isPaused = true;
+            Time.timeScale = 0;
+            commandPanel.SetActive(true);
         }
 
         if (inputs[up] == KeyCode.T || inputs[down] == KeyCode.T || inputs[left] == KeyCode.T || inputs[right] == KeyCode.T)
         {
             t = true;
-            isPaused = true;
+            Time.timeScale = 0;
+            commandPanel.SetActive(true);
         }
 
         if (inputs[up] == KeyCode.R || inputs[down] == KeyCode.R || inputs[left] == KeyCode.R || inputs[right] == KeyCode.R)
         {
             r = true;
-            isPaused = true;
+            Time.timeScale = 0;
+            commandPanel.SetActive(true);
         }
 
         if (inputs[up] == KeyCode.L || inputs[down] == KeyCode.L || inputs[left] == KeyCode.L || inputs[right] == KeyCode.L)
         {
             l = true;
-            isPaused = true;
+            Time.timeScale = 0;
+            commandPanel.SetActive(true);
         }
     }
 

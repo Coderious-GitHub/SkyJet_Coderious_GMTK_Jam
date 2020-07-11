@@ -8,7 +8,7 @@ public class CreateLevel : MonoBehaviour
     public Grid grid;
     public Tilemap map;
     public Tile[] floorTiles;
-    public Tile wallTile;
+    public Tile wallTile, floorTile;
 
     public int width, height;
 
@@ -20,7 +20,8 @@ public class CreateLevel : MonoBehaviour
     {
         map.ClearAllTiles();
         pos = new Vector3Int(0, height / 2, 0);
-        InitWalls();   
+        InitWalls();
+        InitGround();
     }
 
     // Update is called once per frame
@@ -55,6 +56,24 @@ public class CreateLevel : MonoBehaviour
             pos.x -= width - 1;
 
             pos.y = j;
+        }
+    }
+
+    void InitGround()
+    {
+        for (int i = -width / 2 + 1; i <= width / 2 - 2; i++)
+        {
+            for (int j = height / 2 - 1; j >= -height / 2; j--)
+            {
+                if(Random.Range(0, 20) < 1)
+                {
+                    map.SetTile(new Vector3Int(i, j, 0), floorTiles[Random.Range(0, 21)]);
+                }
+                else
+                {
+                    map.SetTile(new Vector3Int(i, j, 0), floorTile);
+                }
+            }
         }
     }
 }
