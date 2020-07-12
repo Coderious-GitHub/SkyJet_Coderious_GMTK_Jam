@@ -20,15 +20,16 @@ public class EnemyGraphics : MonoBehaviour
 
     public void TakeDamage(int dmg)
     { 
-        currentHealth -= dmg;
+        if(manager.c && manager.t && manager.r && manager.l)
+        {
+            currentHealth -= dmg;
+        }
 
-        //play hurt animation
 
-  
-
-        if (currentHealth < 0 & manager.c && manager.t && manager.r && manager.l)
+        if (currentHealth < 0)
         {
             gameObject.transform.parent.gameObject.SetActive(false);
+            //Victory
         }
     }
 

@@ -54,6 +54,12 @@ public class NextRoom : MonoBehaviour
 
         hasEnterNewRoom = true;
 
+        manager.DefineMovement();
+        manager.isScanned = false;
+        manager.timeLeft = 60f;
+        manager.ResetCommandUIText();
+
     }
+
 
 }

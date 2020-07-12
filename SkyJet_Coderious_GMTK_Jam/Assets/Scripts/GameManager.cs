@@ -14,9 +14,10 @@ public class GameManager : MonoBehaviour
 
     int up, down, left, right, attack;
 
-    public float timeLeft = 30f;
+    public float timeLeft = 60f;
 
     public TextMeshProUGUI uiTimeLeft;
+    public TextMeshProUGUI cLetter, tLetter, rLetter, lLetter;
 
     Vector2 movement;
 
@@ -30,7 +31,9 @@ public class GameManager : MonoBehaviour
 
     public AnimationCurve curve;
 
-    bool isScanned;
+    public bool isScanned;
+
+    public bool isUnderControl;
 
     KeyCode[] inputs = new KeyCode[26] {
         KeyCode.A, KeyCode.B, KeyCode.C, KeyCode.D,
@@ -63,6 +66,7 @@ public class GameManager : MonoBehaviour
         commandPanel.SetActive(false);
 
         isScanned = false;
+        isUnderControl = true;
 
         xSpeed = 0;
         ySpeed = 0;
@@ -80,42 +84,76 @@ public class GameManager : MonoBehaviour
             //Game Over
         }
 
-        if(c && t && r && l)
+        if(!isUnderControl)
         {
-            //End room
+            if (Input.GetKeyDown(inputs[up]) || (upAssigned && Input.GetKeyDown(upCommand)))
+            {
+                movement.y = movementSpeed;
+                if (upAssigned)
+                {
+                    upKey.text = upCommand.ToString();
+                }
+                else
+                {
+                    upKey.text = inputs[up].ToString();
+                }
+
+            }
+
+            if (Input.GetKeyDown(inputs[down]) || (downAssigned && Input.GetKeyDown(downCommand)))
+            {
+                movement.y = -movementSpeed;
+                if (downAssigned)
+                {
+                    downKey.text = downCommand.ToString();
+                }
+                else
+                {
+                    downKey.text = inputs[down].ToString();
+                }
+            }
+
+            if (Input.GetKeyDown(inputs[left]) || (leftAssigned && Input.GetKeyDown(leftCommand)))
+            {
+                movement.x = -movementSpeed;
+                if (leftAssigned)
+                {
+                    leftKey.text = leftCommand.ToString();
+                }
+                else
+                {
+                    leftKey.text = inputs[left].ToString();
+                }
+            }
+
+            if (Input.GetKeyDown(inputs[right]) || (rightAssigned && Input.GetKeyDown(rightCommand)))
+            {
+                movement.x = movementSpeed;
+                if (rightAssigned)
+                {
+                    rightKey.text = rightCommand.ToString();
+                }
+                else
+                {
+                    rightKey.text = inputs[right].ToString();
+                }
+            }
+
+
+            if (Input.GetKeyDown(inputs[attack]) || (attackAssigned && Input.GetKeyDown(attackCommand)))
+            {
+                hasAttacked = true;
+                if (attackAssigned)
+                {
+                    attackKey.text = attackCommand.ToString();
+                }
+                else
+                {
+                    attackKey.text = inputs[attack].ToString();
+                }
+            }
         }
-
-        if (Input.GetKeyDown(inputs[up]) || (upAssigned && Input.GetKeyDown(upCommand)) || Input.GetKeyDown(KeyCode.W))
-        {
-            movement.y = movementSpeed;
-            upKey.text = inputs[up].ToString();
-        }
-
-        if (Input.GetKeyDown(inputs[down]) || (downAssigned && Input.GetKeyDown(downCommand)) || Input.GetKeyDown(KeyCode.S))
-        {
-            movement.y = -movementSpeed;
-            downKey.text = inputs[down].ToString();
-        }
-
-        if (Input.GetKeyDown(inputs[left]) || (leftAssigned && Input.GetKeyDown(leftCommand)) || Input.GetKeyDown(KeyCode.A))
-        {
-            movement.x = -movementSpeed; 
-            leftKey.text = inputs[left].ToString();
-        }
-
-        if (Input.GetKeyDown(inputs[right]) || (rightAssigned && Input.GetKeyDown(rightCommand)) || Input.GetKeyDown(KeyCode.D))
-        {
-            movement.x = movementSpeed;
-            rightKey.text = inputs[right].ToString();
-        }
-
-
-        if (Input.GetKeyDown(inputs[attack]) || (attackAssigned && Input.GetKeyDown(attackCommand)))
-        {
-            hasAttacked = true;
-            attackKey.text = inputs[attack].ToString();
-        }
-
+       
         if (!Input.anyKey)
         {
             movement = Vector2.zero;
@@ -146,12 +184,18 @@ public class GameManager : MonoBehaviour
     }
 
 
-    void DefineMovement()
+    public void DefineMovement()
     {
 
         if(!upAssigned)
         {
             up = Random.Range(0, inputs.Length);
+
+            while(inputs[up] == downCommand || inputs[up] == leftCommand || inputs[up] == rightCommand || inputs[up] == attackCommand)
+            {
+                up = Random.Range(0, inputs.Length);
+            }
+
             Debug.Log("Up: " + inputs[up]);
         }
 
@@ -159,7 +203,7 @@ public class GameManager : MonoBehaviour
         {
             down = Random.Range(0, inputs.Length);
 
-            while (down == up)
+            while (down == up || inputs[down] == upCommand || inputs[down] == leftCommand || inputs[down] == rightCommand || inputs[down] == attackCommand)
             {
                 down = Random.Range(0, inputs.Length);
             }
@@ -170,7 +214,7 @@ public class GameManager : MonoBehaviour
         {
             left = Random.Range(0, inputs.Length);
 
-            while (left == up || left == down)
+            while (left == up || left == down || inputs[left] == upCommand || inputs[left] == downCommand || inputs[left] == rightCommand || inputs[left] == attackCommand)
             {
                 left = Random.Range(0, inputs.Length);
             }
@@ -182,7 +226,7 @@ public class GameManager : MonoBehaviour
         {
             right = Random.Range(0, inputs.Length);
 
-            while (right == up || right == down || right == left)
+            while (right == up || right == down || right == left || inputs[right] == upCommand || inputs[right] == downCommand || inputs[right] == leftCommand || inputs[right] == attackCommand)
             {
                 right = Random.Range(0, inputs.Length);
             }
@@ -194,7 +238,7 @@ public class GameManager : MonoBehaviour
         {
             attack = Random.Range(0, inputs.Length);
 
-            while (attack == up || attack == down || attack == left || attack == right)
+            while (attack == up || attack == down || attack == left || attack == right || inputs[attack] == upCommand || inputs[attack] == downCommand || inputs[attack] == leftCommand || inputs[attack] == rightCommand)
             {
                 attack = Random.Range(0, inputs.Length);
             }
@@ -203,32 +247,36 @@ public class GameManager : MonoBehaviour
         }
 
 
-        if (inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C)
+        if ((inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C) && !c)
         {
             c = true;
             Time.timeScale = 0;
             commandPanel.SetActive(true);
+            cLetter.gameObject.SetActive(true);
         }
 
-        if (inputs[up] == KeyCode.T || inputs[down] == KeyCode.T || inputs[left] == KeyCode.T || inputs[right] == KeyCode.T)
+        if ((inputs[up] == KeyCode.T || inputs[down] == KeyCode.T || inputs[left] == KeyCode.T || inputs[right] == KeyCode.T) && !t)
         {
             t = true;
             Time.timeScale = 0;
             commandPanel.SetActive(true);
+            tLetter.gameObject.SetActive(true);
         }
 
-        if (inputs[up] == KeyCode.R || inputs[down] == KeyCode.R || inputs[left] == KeyCode.R || inputs[right] == KeyCode.R)
+        if ((inputs[up] == KeyCode.R || inputs[down] == KeyCode.R || inputs[left] == KeyCode.R || inputs[right] == KeyCode.R) && !r)
         {
             r = true;
             Time.timeScale = 0;
             commandPanel.SetActive(true);
+            rLetter.gameObject.SetActive(true);
         }
 
-        if (inputs[up] == KeyCode.L || inputs[down] == KeyCode.L || inputs[left] == KeyCode.L || inputs[right] == KeyCode.L)
+        if ((inputs[up] == KeyCode.L || inputs[down] == KeyCode.L || inputs[left] == KeyCode.L || inputs[right] == KeyCode.L) && !l)
         {
             l = true;
             Time.timeScale = 0;
             commandPanel.SetActive(true);
+            lLetter.gameObject.SetActive(true);
         }
     }
 
@@ -237,6 +285,34 @@ public class GameManager : MonoBehaviour
         foreach(Light2D light in lights)
         {
             light.intensity = Mathf.Abs(Mathf.Cos(Time.realtimeSinceStartup)) / 4f + 0.25f;
+        }
+    }
+
+    public void ResetCommandUIText()
+    {
+        if(!upAssigned)
+        {
+            upKey.text = "";
+        }
+
+        if (!downAssigned)
+        {
+            downKey.text = "";
+        }
+
+        if (!leftAssigned)
+        {
+            leftKey.text = "";
+        }
+
+        if (!rightAssigned)
+        {
+            rightKey.text = "";
+        }
+
+        if (!attackAssigned)
+        {
+            attackKey.text = "";
         }
     }
 
