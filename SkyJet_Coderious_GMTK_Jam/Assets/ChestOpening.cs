@@ -14,6 +14,7 @@ public class ChestOpening : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        manager.isUnderControl = false;
         enemy.SetActive(true);
         gameObject.SetActive(false);
     }

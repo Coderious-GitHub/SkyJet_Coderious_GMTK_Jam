@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
                 Vector3 newPos = enemy.GetComponent<Transform>().parent.GetComponent<Transform>().position - attackPoint.position;
                 newPos.Normalize();
 
-                enemy.GetComponent<Transform>().parent.GetComponent<Transform>().Translate(newPos);
+                enemy.GetComponent<Transform>().parent.GetComponent<Transform>().Translate(newPos * 2f);
             }
         }
     }

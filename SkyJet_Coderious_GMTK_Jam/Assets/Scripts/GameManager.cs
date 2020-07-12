@@ -49,9 +49,13 @@ public class GameManager : MonoBehaviour
     public float xSpeed, ySpeed;
     public bool hasAttacked = false;
 
+    public GameObject victoryPanel, gameOverPanel;
+
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
+
         c = false;
         t = false;
         r = false;
@@ -81,7 +85,9 @@ public class GameManager : MonoBehaviour
     {
         if(timeLeft < 0)
         {
-            //Game Over
+            Time.timeScale = 0;
+            gameOverPanel.SetActive(true);
+
         }
 
         if(!isUnderControl)
@@ -153,6 +159,13 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            movement.x = Input.GetAxis("Horizontal") * movementSpeed;
+            movement.y = Input.GetAxis("Vertical") * movementSpeed;
+        }
+
+        
        
         if (!Input.anyKey)
         {
@@ -247,7 +260,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-        if ((inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C) && !c)
+        if ((inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C) && !c && !isUnderControl)
         {
             c = true;
             Time.timeScale = 0;
@@ -255,7 +268,7 @@ public class GameManager : MonoBehaviour
             cLetter.gameObject.SetActive(true);
         }
 
-        if ((inputs[up] == KeyCode.T || inputs[down] == KeyCode.T || inputs[left] == KeyCode.T || inputs[right] == KeyCode.T) && !t)
+        if ((inputs[up] == KeyCode.T || inputs[down] == KeyCode.T || inputs[left] == KeyCode.T || inputs[right] == KeyCode.T) && !t && !isUnderControl)
         {
             t = true;
             Time.timeScale = 0;
@@ -263,7 +276,7 @@ public class GameManager : MonoBehaviour
             tLetter.gameObject.SetActive(true);
         }
 
-        if ((inputs[up] == KeyCode.R || inputs[down] == KeyCode.R || inputs[left] == KeyCode.R || inputs[right] == KeyCode.R) && !r)
+        if ((inputs[up] == KeyCode.R || inputs[down] == KeyCode.R || inputs[left] == KeyCode.R || inputs[right] == KeyCode.R) && !r && !isUnderControl)
         {
             r = true;
             Time.timeScale = 0;
@@ -271,7 +284,7 @@ public class GameManager : MonoBehaviour
             rLetter.gameObject.SetActive(true);
         }
 
-        if ((inputs[up] == KeyCode.L || inputs[down] == KeyCode.L || inputs[left] == KeyCode.L || inputs[right] == KeyCode.L) && !l)
+        if ((inputs[up] == KeyCode.L || inputs[down] == KeyCode.L || inputs[left] == KeyCode.L || inputs[right] == KeyCode.L) && !l && !isUnderControl)
         {
             l = true;
             Time.timeScale = 0;
