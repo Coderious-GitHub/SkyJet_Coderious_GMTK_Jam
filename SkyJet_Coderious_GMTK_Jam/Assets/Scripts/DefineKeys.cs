@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DefineKeys : MonoBehaviour
 {
-    public TextMeshProUGUI buttonUp, buttonDown, buttonLeft, buttonRight, buttonBlock, buttonAttack;
+    public TextMeshProUGUI buttonUp, buttonDown, buttonLeft, buttonRight, buttonAttack;
     public GameObject panel;
 
     GameManager gameManager;

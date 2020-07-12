@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     Vector2 movement;
 
-    bool c, t, r, l;
+    public bool c, t, r, l;
     public bool upAssigned, downAssigned, leftAssigned, rightAssigned, attackAssigned;
     public KeyCode upCommand, downCommand, leftCommand, rightCommand, attackCommand;
 

@@ -6,10 +6,35 @@ public class EnemyGraphics : MonoBehaviour
     public AIPath aiPath;
     public Animator animator;
 
+    GameManager manager;
+
+    int maxHealth = 100;
+    public int currentHealth;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentHealth = maxHealth;
+        manager = FindObjectOfType<GameManager>();
+    }
+
+    public void TakeDamage(int dmg)
+    { 
+        currentHealth -= dmg;
+
+        //play hurt animation
+
+  
+
+        if (currentHealth < 0 & manager.c && manager.t && manager.r && manager.l)
+        {
+            gameObject.transform.parent.gameObject.SetActive(false);
+        }
+    }
+
+    public void Die()
+    {
+
     }
 
     // Update is called once per frame
