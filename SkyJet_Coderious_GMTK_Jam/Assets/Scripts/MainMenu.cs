@@ -8,6 +8,13 @@ public class MainMenu : MonoBehaviour
 
     public GameObject mainMenu, instructions;
 
+    private void Start()
+    {
+        AudioManager.instance.Stop("Battle");
+        AudioManager.instance.Stop("Dungeon");
+        AudioManager.instance.Play("Dungeon");
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

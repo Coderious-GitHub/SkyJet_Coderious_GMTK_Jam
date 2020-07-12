@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     public AnimationCurve curve;
 
     public bool isScanned;
+    bool battleMusicPlaying = false;
 
     public bool isUnderControl;
 
@@ -54,6 +55,11 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        battleMusicPlaying = false;
+        AudioManager.instance.Stop("Dungeon");
+        AudioManager.instance.Stop("Battle");
+        AudioManager.instance.Play("Dungeon");
+
         Time.timeScale = 1;
 
         c = false;
@@ -93,7 +99,15 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0;
             gameOverPanel.SetActive(true);
+            AudioManager.instance.Play("Lose");
 
+        }
+
+        if((c && t && r && l) && !battleMusicPlaying)
+        {
+            AudioManager.instance.Stop("Dungeon");
+            AudioManager.instance.Play("Battle");
+            battleMusicPlaying = true;
         }
 
         if(!isUnderControl)
@@ -269,6 +283,7 @@ public class GameManager : MonoBehaviour
         if ((inputs[up] == KeyCode.C || inputs[down] == KeyCode.C || inputs[left] == KeyCode.C || inputs[right] == KeyCode.C) && !c && !isUnderControl)
         {
             c = true;
+            AudioManager.instance.Play("ControlBack");
             Time.timeScale = 0;
             commandPanel.SetActive(true);
             cLetter.gameObject.SetActive(true);
@@ -277,6 +292,7 @@ public class GameManager : MonoBehaviour
         if ((inputs[up] == KeyCode.T || inputs[down] == KeyCode.T || inputs[left] == KeyCode.T || inputs[right] == KeyCode.T) && !t && !isUnderControl)
         {
             t = true;
+            AudioManager.instance.Play("ControlBack");
             Time.timeScale = 0;
             commandPanel.SetActive(true);
             tLetter.gameObject.SetActive(true);
@@ -285,6 +301,7 @@ public class GameManager : MonoBehaviour
         if ((inputs[up] == KeyCode.R || inputs[down] == KeyCode.R || inputs[left] == KeyCode.R || inputs[right] == KeyCode.R) && !r && !isUnderControl)
         {
             r = true;
+            AudioManager.instance.Play("ControlBack");
             Time.timeScale = 0;
             commandPanel.SetActive(true);
             rLetter.gameObject.SetActive(true);
@@ -293,6 +310,7 @@ public class GameManager : MonoBehaviour
         if ((inputs[up] == KeyCode.L || inputs[down] == KeyCode.L || inputs[left] == KeyCode.L || inputs[right] == KeyCode.L) && !l && !isUnderControl)
         {
             l = true;
+            AudioManager.instance.Play("ControlBack");
             Time.timeScale = 0;
             commandPanel.SetActive(true);
             lLetter.gameObject.SetActive(true);

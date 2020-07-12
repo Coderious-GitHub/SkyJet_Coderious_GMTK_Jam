@@ -31,6 +31,7 @@ public class EnemyGraphics : MonoBehaviour
             gameObject.transform.parent.gameObject.SetActive(false);
             Time.timeScale = 0;
             manager.victoryPanel.SetActive(true);
+            AudioManager.instance.Play("Victory");
         }
     }
 
