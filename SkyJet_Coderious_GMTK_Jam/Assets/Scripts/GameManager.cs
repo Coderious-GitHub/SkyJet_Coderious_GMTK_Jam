@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
             downKey.text = inputs[down].ToString();
         }
 
-        if (Input.GetKeyDown(inputs[left]) || (leftAssigned && Input.GetKeyDown(leftCommand)) || Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(inputs[left]) || (leftAssigned && Input.GetKeyDown(leftCommand)) || Input.GetKeyDown(KeyCode.A))
         {
             movement.x = -movementSpeed; 
             leftKey.text = inputs[left].ToString();

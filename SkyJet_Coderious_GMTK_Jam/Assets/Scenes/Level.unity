@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 1299913538}
+  playerLight: {fileID: 1473558769}
   commandPanel: {fileID: 1394734143}
   timeLeft: 30
   uiTimeLeft: {fileID: 2101489047}
@@ -159,19 +160,16 @@ MonoBehaviour:
   downAssigned: 0
   leftAssigned: 0
   rightAssigned: 0
-  blockAssigned: 0
   attackAssigned: 0
   upCommand: 0
   downCommand: 0
   leftCommand: 0
   rightCommand: 0
-  blockCommand: 0
   attackCommand: 0
   upKey: {fileID: 2019014221}
   downKey: {fileID: 2091215694}
   leftKey: {fileID: 1336200155}
   rightKey: {fileID: 1579173238}
-  blockKey: {fileID: 289661694}
   attackKey: {fileID: 870689816}
   lights:
   - {fileID: 109729537}
@@ -206,7 +204,6 @@ MonoBehaviour:
   xSpeed: 0
   ySpeed: 0
   hasAttacked: 0
-  hasBlocked: 1
 --- !u!4 &17162669
 Transform:
   m_ObjectHideFlags: 0
@@ -4175,7 +4172,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}

@@ -22,37 +22,14 @@ AnimationClip:
     - time: 0
       value: {fileID: 3660162745659895629, guid: 7755ea5558f09014b9a1452e1eed8a3d,
         type: 3}
-<<<<<<< HEAD
-<<<<<<< HEAD
-    - time: 0.16666667
-      value: {fileID: 6717372158392901586, guid: 7755ea5558f09014b9a1452e1eed8a3d,
-        type: 3}
-    - time: 0.31666666
-      value: {fileID: 3660162745659895629, guid: 7755ea5558f09014b9a1452e1eed8a3d,
-        type: 3}
-=======
     - time: 0.25
       value: {fileID: 6717372158392901586, guid: 7755ea5558f09014b9a1452e1eed8a3d,
         type: 3}
->>>>>>> 23a483e7c3376cab4c4b24a84081434357b17ea4
-=======
-    - time: 0.25
-      value: {fileID: 6717372158392901586, guid: 7755ea5558f09014b9a1452e1eed8a3d,
-        type: 3}
->>>>>>> a7ee43958b447dc8375dc2e37425a6a76fcf08e0
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_SampleRate: 60
-=======
   m_SampleRate: 4
->>>>>>> 23a483e7c3376cab4c4b24a84081434357b17ea4
-=======
-  m_SampleRate: 4
->>>>>>> a7ee43958b447dc8375dc2e37425a6a76fcf08e0
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -69,27 +46,12 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 3660162745659895629, guid: 7755ea5558f09014b9a1452e1eed8a3d, type: 3}
     - {fileID: 6717372158392901586, guid: 7755ea5558f09014b9a1452e1eed8a3d, type: 3}
-<<<<<<< HEAD
-<<<<<<< HEAD
-    - {fileID: 3660162745659895629, guid: 7755ea5558f09014b9a1452e1eed8a3d, type: 3}
-=======
->>>>>>> 23a483e7c3376cab4c4b24a84081434357b17ea4
-=======
->>>>>>> a7ee43958b447dc8375dc2e37425a6a76fcf08e0
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_StopTime: 0.33333334
-=======
     m_StopTime: 0.5
->>>>>>> 23a483e7c3376cab4c4b24a84081434357b17ea4
-=======
-    m_StopTime: 0.5
->>>>>>> a7ee43958b447dc8375dc2e37425a6a76fcf08e0
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
