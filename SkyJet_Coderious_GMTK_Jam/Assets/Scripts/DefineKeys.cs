@@ -87,23 +87,6 @@ public class DefineKeys : MonoBehaviour
         }
     }
 
-    public void AssignKeyBlock()
-    {
-        if (buttonBlock.text == "" && !choiceMade)
-        {
-            foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
-            {
-                if (Input.GetKey(vKey))
-                {
-                    buttonBlock.text = vKey.ToString();
-                    choiceMade = true;
-                    gameManager.blockCommand = vKey;
-                    gameManager.blockAssigned = true;
-                }
-            }
-        }
-    }
-
     public void AssignKeyAttack()
     {
         if (buttonAttack.text == "" && !choiceMade)

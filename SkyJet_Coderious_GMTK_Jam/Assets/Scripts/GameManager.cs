@@ -8,10 +8,11 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Rigidbody2D playerRb;
+    public Light2D playerLight;
 
     public GameObject commandPanel;
 
-    int up, down, left, right, block, attack;
+    int up, down, left, right, attack;
 
     public float timeLeft = 30f;
 
@@ -20,10 +21,10 @@ public class GameManager : MonoBehaviour
     Vector2 movement;
 
     bool c, t, r, l;
-    public bool upAssigned, downAssigned, leftAssigned, rightAssigned, blockAssigned, attackAssigned;
-    public KeyCode upCommand, downCommand, leftCommand, rightCommand, blockCommand, attackCommand;
+    public bool upAssigned, downAssigned, leftAssigned, rightAssigned, attackAssigned;
+    public KeyCode upCommand, downCommand, leftCommand, rightCommand, attackCommand;
 
-    public TextMeshProUGUI upKey, downKey, leftKey, rightKey, blockKey, attackKey;
+    public TextMeshProUGUI upKey, downKey, leftKey, rightKey, attackKey;
 
     public Light2D[] lights = new Light2D[4];
 
@@ -44,7 +45,6 @@ public class GameManager : MonoBehaviour
     public float movementSpeed = 2f;
     public float xSpeed, ySpeed;
     public bool hasAttacked = false;
-    public bool hasBlocked = true;
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +58,6 @@ public class GameManager : MonoBehaviour
         downAssigned = false;
         leftAssigned = false;
         rightAssigned = false;
-        blockAssigned = false;
         attackAssigned = false;
 
         commandPanel.SetActive(false);
@@ -110,11 +109,6 @@ public class GameManager : MonoBehaviour
             rightKey.text = inputs[right].ToString();
         }
 
-        if (Input.GetKeyDown(inputs[block]) || (blockAssigned && Input.GetKeyDown(blockCommand)) || Input.GetKeyDown(KeyCode.W))
-        {
-            hasBlocked = true;
-            blockKey.text = inputs[block].ToString();
-        }
 
         if (Input.GetKeyDown(inputs[attack]) || (attackAssigned && Input.GetKeyDown(attackCommand)))
         {
@@ -131,6 +125,7 @@ public class GameManager : MonoBehaviour
         uiTimeLeft.text = timeLeft.ToString();
 
         ChangeLight();
+        playerLight.transform.position = playerRb.position;
 
     }
 
@@ -195,23 +190,11 @@ public class GameManager : MonoBehaviour
             Debug.Log("Right: " + inputs[right]);
         }
 
-        if (!blockAssigned)
-        {
-            block = Random.Range(0, inputs.Length);
-
-            while (block == up || block == down || block == left || block == right)
-            {
-                block = Random.Range(0, inputs.Length);
-            }
-
-            Debug.Log("Block: " + inputs[block]);
-        }
-
         if (!attackAssigned)
         {
             attack = Random.Range(0, inputs.Length);
 
-            while (attack == up || attack == down || attack == left || attack == right || attack == block)
+            while (attack == up || attack == down || attack == left || attack == right)
             {
                 attack = Random.Range(0, inputs.Length);
             }
