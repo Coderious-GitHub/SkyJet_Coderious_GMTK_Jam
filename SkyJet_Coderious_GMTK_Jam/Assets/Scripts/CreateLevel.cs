@@ -9,18 +9,14 @@ public class CreateLevel : MonoBehaviour
     public Grid grid;
     public Tilemap walls, walkableGround, obstacleGround;
     public Tile[] walkableFloorTiles, obstacleFloorTiles;
-    public Tile wallTile, floorTile;
+    public Tile wallTile, floorTile, exitTile;
 
     public int width, height;
-
-    Vector3Int pos;
-
 
     // Start is called before the first frame update
     void Start()
     {
         walls.ClearAllTiles();
-        pos = new Vector3Int(0, height / 2, 0);
         InitWalls();
         InitGround();
     }
@@ -33,6 +29,10 @@ public class CreateLevel : MonoBehaviour
 
     void InitWalls()
     {
+        Vector3Int pos = new Vector3Int(0, height / 2, 0);
+        Vector3Int exit = new Vector3Int(0, 0, 0);
+        bool exitPlaced = false;
+
         //draw upper and lower borders
         for (int i = -width / 2; i <= width / 2; i++)
         {
@@ -43,6 +43,12 @@ public class CreateLevel : MonoBehaviour
             pos.y += height;
 
             pos.x = i;
+
+            if (!exitPlaced && Random.Range(0, 50) < 5 && i != -width / 2 && i != width / 2)
+            {
+                exit = pos;
+                exitPlaced = true;
+            }
         }
 
         pos = new Vector3Int(-width / 2, height / 2 - 1, 0);
@@ -57,7 +63,16 @@ public class CreateLevel : MonoBehaviour
             pos.x -= width - 1;
 
             pos.y = j;
+
+            if (!exitPlaced && Random.Range(0, 50) < 5 && j != height / 2 - 1 && j != -height / 2 - 1)
+            {
+                exit = pos;
+                exitPlaced = true;
+            }
         }
+
+        walls.SetTile(exit, null);
+        walkableGround.SetTile(exit, exitTile);
     }
 
     void InitGround()
@@ -66,7 +81,6 @@ public class CreateLevel : MonoBehaviour
         {
             for (int j = height / 2 - 1; j >= -height / 2; j--)
             {
-
                 if(Random.Range(0, 30) == 0)
                 {
                     walkableGround.SetTile(new Vector3Int(i, j, 0), walkableFloorTiles[Random.Range(0, walkableFloorTiles.Length)]);
