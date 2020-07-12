@@ -1,0 +1,878 @@
+fileFormatVersion: 2
+guid: fc282375af8add64999f7b79ea88bce4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1974087182348041521
+    second: GJ_PlayerChar_SP2_0
+  - first:
+      213: 699138988249616293
+    second: GJ_PlayerChar_SP2_1
+  - first:
+      213: -8400261008473514317
+    second: GJ_PlayerChar_SP2_2
+  - first:
+      213: -454600797794481043
+    second: GJ_PlayerChar_SP2_3
+  - first:
+      213: -5534871096085291721
+    second: GJ_PlayerChar_SP2_4
+  - first:
+      213: -5289888019385571622
+    second: GJ_PlayerChar_SP2_5
+  - first:
+      213: 2868217531979356095
+    second: GJ_PlayerChar_SP2_6
+  - first:
+      213: 4010138085166300234
+    second: GJ_PlayerChar_SP2_7
+  - first:
+      213: 1361501715317192525
+    second: GJ_PlayerChar_SP2_8
+  - first:
+      213: -3360240989311339148
+    second: GJ_PlayerChar_SP2_9
+  - first:
+      213: 7924115653883113229
+    second: GJ_PlayerChar_SP2_10
+  - first:
+      213: 2347989890688560388
+    second: GJ_PlayerChar_SP2_11
+  - first:
+      213: 7484450182450526798
+    second: GJ_PlayerChar_SP2_12
+  - first:
+      213: -6228129631278631105
+    second: GJ_PlayerChar_SP2_13
+  - first:
+      213: 6110675735258725313
+    second: GJ_PlayerChar_SP2_14
+  - first:
+      213: -6521632221011052650
+    second: GJ_PlayerChar_SP2_15
+  - first:
+      213: -6090190633942310531
+    second: GJ_PlayerChar_SP2_16
+  - first:
+      213: 2685329992732325787
+    second: GJ_PlayerChar_SP2_17
+  - first:
+      213: -4138973541919862730
+    second: GJ_PlayerChar_SP2_18
+  - first:
+      213: -2137653966034628862
+    second: GJ_PlayerChar_SP2_19
+  - first:
+      213: -9175929453727428957
+    second: GJ_PlayerChar_SP2_20
+  - first:
+      213: 4142666358272674828
+    second: GJ_PlayerChar_SP2_21
+  - first:
+      213: -3752785690844313048
+    second: GJ_PlayerChar_SP2_22
+  - first:
+      213: -3146079008645808354
+    second: GJ_PlayerChar_SP2_23
+  - first:
+      213: -229551732572760359
+    second: GJ_PlayerChar_SP2_24
+  - first:
+      213: -3481989600099274588
+    second: GJ_PlayerChar_SP2_25
+  - first:
+      213: -8319760563606970165
+    second: GJ_PlayerChar_SP2_26
+  - first:
+      213: -8714481978301299277
+    second: GJ_PlayerChar_SP2_27
+  - first:
+      213: -7755882164896068806
+    second: GJ_PlayerChar_SP2_28
+  - first:
+      213: -122805435092078851
+    second: GJ_PlayerChar_SP2_29
+  - first:
+      213: 848623605288205046
+    second: GJ_PlayerChar_SP2_30
+  - first:
+      213: 5258690099074098785
+    second: GJ_PlayerChar_SP2_31
+  - first:
+      213: -9006252507685551458
+    second: GJ_PlayerChar_SP2_32
+  - first:
+      213: -567750207988820458
+    second: GJ_PlayerChar_SP2_33
+  - first:
+      213: 9019148650050291850
+    second: GJ_PlayerChar_SP2_34
+  - first:
+      213: 3074307328339088984
+    second: GJ_PlayerChar_SP2_35
+  - first:
+      213: -1568213100655741651
+    second: GJ_PlayerChar_SP2_36
+  - first:
+      213: 5717116728328124830
+    second: GJ_PlayerChar_SP2_37
+  - first:
+      213: -740400807339594642
+    second: GJ_PlayerChar_SP2_0
+  - first:
+      213: 7947621371176947038
+    second: GJ_PlayerChar_SP2_2
+  - first:
+      213: -5309342940551720269
+    second: GJ_PlayerChar_SP2_4
+  - first:
+      213: 1486001042590045453
+    second: GJ_PlayerChar_SP2_5
+  - first:
+      213: 4050111260274750451
+    second: GJ_PlayerChar_SP2_6
+  - first:
+      213: -6956477107808823048
+    second: GJ_PlayerChar_SP2_7
+  - first:
+      213: 4201900139012434980
+    second: GJ_PlayerChar_SP2_8
+  - first:
+      213: -4602154156972849524
+    second: GJ_PlayerChar_SP2_9
+  - first:
+      213: -1417753586567706590
+    second: GJ_PlayerChar_SP2_10
+  - first:
+      213: -609215002956716956
+    second: GJ_PlayerChar_SP2_12
+  - first:
+      213: 2431653631968455389
+    second: GJ_PlayerChar_SP2_14
+  - first:
+      213: -5356891468960740459
+    second: GJ_PlayerChar_SP2_15
+  - first:
+      213: -1611766212509707111
+    second: GJ_PlayerChar_SP2_16
+  - first:
+      213: -8238662901807606780
+    second: GJ_PlayerChar_SP2_17
+  - first:
+      213: -6590051435286249398
+    second: GJ_PlayerChar_SP2_18
+  - first:
+      213: -6781616887874610704
+    second: GJ_PlayerChar_SP2_20
+  - first:
+      213: -600028367624216067
+    second: GJ_PlayerChar_SP2_22
+  - first:
+      213: 7527443493433276312
+    second: GJ_PlayerChar_SP2_23
+  - first:
+      213: 1789279141677022099
+    second: GJ_PlayerChar_SP2_25
+  - first:
+      213: 3727379441232488018
+    second: GJ_PlayerChar_SP2_27
+  - first:
+      213: 7752847656164933784
+    second: GJ_PlayerChar_SP2_28
+  - first:
+      213: -3788931980359168697
+    second: GJ_PlayerChar_SP2_29
+  - first:
+      213: 5676078215876577342
+    second: GJ_PlayerChar_SP2_30
+  - first:
+      213: -1595360521038113163
+    second: GJ_PlayerChar_SP2_34
+  - first:
+      213: 4370876645767504538
+    second: GJ_PlayerChar_SP2_35
+  - first:
+      213: 2050520244757850694
+    second: GJ_PlayerChar_SP2_36
+  - first:
+      213: 3552576179190885556
+    second: GJ_PlayerChar_SP2_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 457
+        width: 81
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c6c17736199b5f0800000000000000
+      internalID: -740400807339594642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 458
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d0e4e578f9b4e60800000000000000
+      internalID: 7947621371176947038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 456
+        width: 68
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2dfa5c9bc6156b0800000000000000
+      internalID: -5309342940551720269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 452
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05907733165f9410800000000000000
+      internalID: 1486001042590045453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_6
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 483
+        width: 87
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f37c799bb2e43830800000000000000
+      internalID: 4050111260274750451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_7
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 483
+        width: 94
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f81bec6de0a57f90800000000000000
+      internalID: -6956477107808823048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_8
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 481
+        width: 89
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c208fe9e5205a30800000000000000
+      internalID: 4201900139012434980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 325
+        width: 121
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86cb007d2dd120c0800000000000000
+      internalID: -4602154156972849524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 329
+        width: 68
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2288895ef90235ce0800000000000000
+      internalID: -1417753586567706590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_12
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 331
+        width: 81
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4642decbe22ab87f0800000000000000
+      internalID: -609215002956716956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_14
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 329
+        width: 77
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddaa4464818feb120800000000000000
+      internalID: 2431653631968455389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_15
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 341
+        width: 87
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b464c479f78a5b0800000000000000
+      internalID: -5356891468960740459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_16
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 344
+        width: 94
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994d1625b2bd1a9e0800000000000000
+      internalID: -1611766212509707111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_17
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 344
+        width: 87
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4049199bdb36aad80800000000000000
+      internalID: -8238662901807606780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_18
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 190
+        width: 61
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40c53c922f6b84a0800000000000000
+      internalID: -6590051435286249398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_20
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 181
+        width: 65
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9917bfe5bd2e1a0800000000000000
+      internalID: -6781616887874610704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_22
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 198
+        width: 50
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1e994f0654ca7f0800000000000000
+      internalID: -600028367624216067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_23
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 195
+        width: 51
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8977ae4a9f9d67860800000000000000
+      internalID: 7527443493433276312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_25
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 196
+        width: 67
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bbcab36ebc4d810800000000000000
+      internalID: 1789279141677022099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_27
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 196
+        width: 74
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256a1c17adf4ab330800000000000000
+      internalID: 3727379441232488018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_28
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 194
+        width: 79
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8904e6fedd5a79b60800000000000000
+      internalID: 7752847656164933784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_29
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 194
+        width: 61
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d039040720b6bc0800000000000000
+      internalID: -3788931980359168697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_30
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 194
+        width: 68
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3808ae601b75ce40800000000000000
+      internalID: 5676078215876577342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_34
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 51
+        width: 68
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57657d60f042cd9e0800000000000000
+      internalID: -1595360521038113163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_35
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 54
+        width: 65
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92e504c62978ac30800000000000000
+      internalID: 4370876645767504538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_36
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 57
+        width: 75
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ae9896c49e47c10800000000000000
+      internalID: 2050520244757850694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_PlayerChar_SP2_37
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 57
+        width: 68
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcef2e66394d4130800000000000000
+      internalID: 3552576179190885556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 74da075638f3ae8449d50c14774dd9ea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
