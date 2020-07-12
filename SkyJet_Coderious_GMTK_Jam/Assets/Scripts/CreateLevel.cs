@@ -7,9 +7,11 @@ using Pathfinding;
 public class CreateLevel : MonoBehaviour
 {
     public Grid grid;
-    public Tilemap walls, walkableGround, obstacleGround, exit;
-    public Tile[] walkableFloorTiles, obstacleFloorTiles;
+    public Tilemap walls, walkableGround, obstacleGround, enterMap, exitMap;
+    public Tile[] floorTiles;
     public Tile wallTile, floorTile, exitTile;
+
+    public Vector3Int enterPos, exitPos;
 
     public int width, height;
 
@@ -27,7 +29,7 @@ public class CreateLevel : MonoBehaviour
  
     }
 
-    void InitWalls()
+    public void InitWalls()
     {
         Vector3Int pos = new Vector3Int(0, height / 2, 0);
         Vector3Int exit = new Vector3Int(0, 0, 0);
@@ -36,9 +38,11 @@ public class CreateLevel : MonoBehaviour
         //draw upper and lower borders
         for (int i = -width / 2; i <= width / 2; i++)
         {
+            Debug.Log(pos);
             walls.SetTile(pos, wallTile);
             pos.y -= height;
 
+            Debug.Log(pos);
             walls.SetTile(pos, wallTile);
             pos.y += height;
 
@@ -56,9 +60,11 @@ public class CreateLevel : MonoBehaviour
         //draw left and right borders
         for (int j = height / 2 - 1; j >= -height / 2 - 1; j--)
         {
+            Debug.Log(pos);
             walls.SetTile(pos, wallTile);
             pos.x += width - 1;
 
+            Debug.Log(pos);
             walls.SetTile(pos, wallTile);
             pos.x -= width - 1;
 
@@ -71,23 +77,22 @@ public class CreateLevel : MonoBehaviour
             }
         }
 
+        exitPos = exit;
+
         walls.SetTile(exit, null);
-        walkableGround.SetTile(exit, exitTile);
+        exitMap.SetTile(exit, exitTile);
+        exitPlaced = false;
     }
 
-    void InitGround()
+    public void InitGround()
     {
         for (int i = -width / 2 + 1; i <= width / 2 - 2; i++)
         {
             for (int j = height / 2 - 1; j >= -height / 2; j--)
             {
-                if(Random.Range(0, 30) == 0)
+                if(Random.Range(0, 30) < 2)
                 {
-                    walkableGround.SetTile(new Vector3Int(i, j, 0), walkableFloorTiles[Random.Range(0, walkableFloorTiles.Length)]);
-                }
-                else if(Random.Range(0, 30) == 1)
-                {
-                    obstacleGround.SetTile(new Vector3Int(i, j, 0), obstacleFloorTiles[Random.Range(0, obstacleFloorTiles.Length)]);
+                    walkableGround.SetTile(new Vector3Int(i, j, 0), floorTiles[Random.Range(0, floorTiles.Length)]);
                 }
                 else
                 {
