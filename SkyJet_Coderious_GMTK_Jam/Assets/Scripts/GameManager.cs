@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         KeyCode.Y, KeyCode.Z,
     };
 
-    float movementSpeed = 2f;
+    public float movementSpeed = 2f;
     public float xSpeed, ySpeed;
     public bool hasAttacked = false;
     public bool hasBlocked = true;
@@ -76,7 +76,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if(timeLeft < 0)
         {
             //Game Over
@@ -87,31 +86,31 @@ public class GameManager : MonoBehaviour
             //End room
         }
 
-        if (Input.GetKeyDown(inputs[up]) || (upAssigned && Input.GetKeyDown(upCommand)))
+        if (Input.GetKeyDown(inputs[up]) || (upAssigned && Input.GetKeyDown(upCommand)) || Input.GetKeyDown(KeyCode.W))
         {
             movement.y = movementSpeed;
             upKey.text = inputs[up].ToString();
         }
 
-        if (Input.GetKeyDown(inputs[down]) || (downAssigned && Input.GetKeyDown(downCommand)))
+        if (Input.GetKeyDown(inputs[down]) || (downAssigned && Input.GetKeyDown(downCommand)) || Input.GetKeyDown(KeyCode.S))
         {
             movement.y = -movementSpeed;
             downKey.text = inputs[down].ToString();
         }
 
-        if (Input.GetKeyDown(inputs[left]) || (leftAssigned && Input.GetKeyDown(leftCommand)))
+        if (Input.GetKeyDown(inputs[left]) || (leftAssigned && Input.GetKeyDown(leftCommand)) || Input.GetKeyDown(KeyCode.S))
         {
             movement.x = -movementSpeed; 
             leftKey.text = inputs[left].ToString();
         }
 
-        if (Input.GetKeyDown(inputs[right]) || (rightAssigned && Input.GetKeyDown(rightCommand)))
+        if (Input.GetKeyDown(inputs[right]) || (rightAssigned && Input.GetKeyDown(rightCommand)) || Input.GetKeyDown(KeyCode.D))
         {
             movement.x = movementSpeed;
             rightKey.text = inputs[right].ToString();
         }
 
-        if (Input.GetKeyDown(inputs[block]) || (blockAssigned && Input.GetKeyDown(blockCommand)))
+        if (Input.GetKeyDown(inputs[block]) || (blockAssigned && Input.GetKeyDown(blockCommand)) || Input.GetKeyDown(KeyCode.W))
         {
             hasBlocked = true;
             blockKey.text = inputs[block].ToString();
