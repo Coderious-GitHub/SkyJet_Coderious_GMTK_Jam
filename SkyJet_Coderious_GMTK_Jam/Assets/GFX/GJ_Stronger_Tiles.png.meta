@@ -1,70 +1,73 @@
 fileFormatVersion: 2
-guid: f0c6fdfef81397a4bbd557591b162059
+guid: 610b87bea6c3e334a9a86e28760aa532
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4296686109670039277
-    second: GJ_BrownVariationsS_Tiles_128_0
+      213: 7542545226886299825
+    second: GJ_Stronger_Tiles_0
   - first:
-      213: -3918883618298349861
-    second: GJ_BrownVariationsS_Tiles_128_1
+      213: -7822167104727140191
+    second: GJ_Stronger_Tiles_1
   - first:
-      213: 1880318605977019621
-    second: GJ_BrownVariationsS_Tiles_128_2
+      213: -1437305238034111054
+    second: GJ_Stronger_Tiles_2
   - first:
-      213: 5772329353187812567
-    second: GJ_BrownVariationsS_Tiles_128_3
+      213: 719896397179559135
+    second: GJ_Stronger_Tiles_3
   - first:
-      213: 3170503831671295024
-    second: GJ_BrownVariationsS_Tiles_128_4
+      213: 5657057113717536174
+    second: GJ_Stronger_Tiles_4
   - first:
-      213: 6847736928272355215
-    second: GJ_BrownVariationsS_Tiles_128_5
+      213: -8169066876333367657
+    second: GJ_Stronger_Tiles_5
   - first:
-      213: -5522590545785932851
-    second: GJ_BrownVariationsS_Tiles_128_6
+      213: 6759654941308424976
+    second: GJ_Stronger_Tiles_6
   - first:
-      213: 2786982700612415883
-    second: GJ_BrownVariationsS_Tiles_128_7
+      213: -7779814428790837464
+    second: GJ_Stronger_Tiles_7
   - first:
-      213: 6830969086346465858
-    second: GJ_BrownVariationsS_Tiles_128_8
+      213: 3709883502391782214
+    second: GJ_Stronger_Tiles_8
   - first:
-      213: 3297490593080299679
-    second: GJ_BrownVariationsS_Tiles_128_9
+      213: 7378268323438059182
+    second: GJ_Stronger_Tiles_9
   - first:
-      213: 4843909653709180861
-    second: GJ_BrownVariationsS_Tiles_128_10
+      213: -5805751984784959794
+    second: GJ_Stronger_Tiles_10
   - first:
-      213: 8370367328651227070
-    second: GJ_BrownVariationsS_Tiles_128_11
+      213: -6700360752028154518
+    second: GJ_Stronger_Tiles_11
   - first:
-      213: 4201468182306984664
-    second: GJ_BrownVariationsS_Tiles_128_12
+      213: 6401028999022374177
+    second: GJ_Stronger_Tiles_12
   - first:
-      213: -4264150345837908676
-    second: GJ_BrownVariationsS_Tiles_128_13
+      213: -8975080208135981564
+    second: GJ_Stronger_Tiles_13
   - first:
-      213: 7825286564899288242
-    second: GJ_BrownVariationsS_Tiles_128_14
+      213: -5227693664892683193
+    second: GJ_Stronger_Tiles_14
   - first:
-      213: 9033728796348569335
-    second: GJ_BrownVariationsS_Tiles_128_15
+      213: 4554629491362105172
+    second: GJ_Stronger_Tiles_15
   - first:
-      213: -257084427459650621
-    second: GJ_BrownVariationsS_Tiles_128_16
+      213: 5494269409911214074
+    second: GJ_Stronger_Tiles_16
   - first:
-      213: 3759294611649773516
-    second: GJ_BrownVariationsS_Tiles_128_17
+      213: 5812220421429776679
+    second: GJ_Stronger_Tiles_17
   - first:
-      213: 3777802486700015898
-    second: GJ_BrownVariationsS_Tiles_128_18
+      213: -101817510011881263
+    second: GJ_Stronger_Tiles_18
   - first:
-      213: 2916224808305998245
-    second: GJ_BrownVariationsS_Tiles_128_19
+      213: 8129403159760388632
+    second: GJ_Stronger_Tiles_19
   - first:
-      213: -4093699994547262863
-    second: GJ_BrownVariationsS_Tiles_128_20
+      213: -3795393641578519723
+    second: GJ_Stronger_Tiles_20
+  - first:
+      213: 3017742659794425487
+    second: GJ_Stronger_Tiles_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -162,7 +165,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_0
+      name: GJ_Stronger_Tiles_0
       rect:
         serializedVersion: 2
         x: 9
@@ -176,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: deedc3e7045e0ab30800000000000000
-      internalID: 4296686109670039277
+      spriteID: 1b040e6fbe08ca860800000000000000
+      internalID: 7542545226886299825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_1
+      name: GJ_Stronger_Tiles_1
       rect:
         serializedVersion: 2
         x: 142
@@ -197,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd6ba3fbc145d99c0800000000000000
-      internalID: -3918883618298349861
+      spriteID: 1a83efc3674127390800000000000000
+      internalID: -7822167104727140191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_2
+      name: GJ_Stronger_Tiles_2
       rect:
         serializedVersion: 2
         x: 275
@@ -218,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e461dd4fcb381a10800000000000000
-      internalID: 1880318605977019621
+      spriteID: 2b52b2d408aad0ce0800000000000000
+      internalID: -1437305238034111054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_3
+      name: GJ_Stronger_Tiles_3
       rect:
         serializedVersion: 2
         x: 408
@@ -239,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d4e15fa6fe6b1050800000000000000
-      internalID: 5772329353187812567
+      spriteID: fdc98f485f59df900800000000000000
+      internalID: 719896397179559135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_4
+      name: GJ_Stronger_Tiles_4
       rect:
         serializedVersion: 2
         x: 540
@@ -260,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03c48c5df64effb20800000000000000
-      internalID: 3170503831671295024
+      spriteID: ea5fa39f877e18e40800000000000000
+      internalID: 5657057113717536174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_5
+      name: GJ_Stronger_Tiles_5
       rect:
         serializedVersion: 2
         x: 7
@@ -281,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8f8ff4947c080f50800000000000000
-      internalID: 6847736928272355215
+      spriteID: 79e5db125f4a1ae80800000000000000
+      internalID: -8169066876333367657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_6
+      name: GJ_Stronger_Tiles_6
       rect:
         serializedVersion: 2
         x: 142
@@ -302,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc3bf769821db53b0800000000000000
-      internalID: -5522590545785932851
+      spriteID: 01317ecda5e1fcd50800000000000000
+      internalID: 6759654941308424976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_7
+      name: GJ_Stronger_Tiles_7
       rect:
         serializedVersion: 2
         x: 275
@@ -323,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b817929000a5da620800000000000000
-      internalID: 2786982700612415883
+      spriteID: 82fa6790ffb880490800000000000000
+      internalID: -7779814428790837464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_8
+      name: GJ_Stronger_Tiles_8
       rect:
         serializedVersion: 2
         x: 409
@@ -344,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2421b57213a7cce50800000000000000
-      internalID: 6830969086346465858
+      spriteID: 64be42eb3672c7330800000000000000
+      internalID: 3709883502391782214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_9
+      name: GJ_Stronger_Tiles_9
       rect:
         serializedVersion: 2
         x: 541
@@ -365,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f905eba393a03cd20800000000000000
-      internalID: 3297490593080299679
+      spriteID: eaeda0cc2ffd46660800000000000000
+      internalID: 7378268323438059182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_10
+      name: GJ_Stronger_Tiles_10
       rect:
         serializedVersion: 2
         x: 10
@@ -386,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbfcb697a26093340800000000000000
-      internalID: 4843909653709180861
+      spriteID: ec69fdc7453dd6fa0800000000000000
+      internalID: -5805751984784959794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_11
+      name: GJ_Stronger_Tiles_11
       rect:
         serializedVersion: 2
         x: 144
@@ -407,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebfaacfbcb4892470800000000000000
-      internalID: 8370367328651227070
+      spriteID: a65846465698303a0800000000000000
+      internalID: -6700360752028154518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_12
+      name: GJ_Stronger_Tiles_12
       rect:
         serializedVersion: 2
         x: 279
@@ -428,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d2938d2d0d9e4a30800000000000000
-      internalID: 4201468182306984664
+      spriteID: 12de3b3e5f505d850800000000000000
+      internalID: 6401028999022374177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_13
+      name: GJ_Stronger_Tiles_13
       rect:
         serializedVersion: 2
         x: 412
@@ -449,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3de8775ad1b2d4c0800000000000000
-      internalID: -4264150345837908676
+      spriteID: 4067a6b4a1c127380800000000000000
+      internalID: -8975080208135981564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_14
+      name: GJ_Stronger_Tiles_14
       rect:
         serializedVersion: 2
         x: 546
@@ -470,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b4757eaba0099c60800000000000000
-      internalID: 7825286564899288242
+      spriteID: 74cf28d2f408377b0800000000000000
+      internalID: -5227693664892683193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_15
+      name: GJ_Stronger_Tiles_15
       rect:
         serializedVersion: 2
         x: 10
@@ -491,14 +494,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f6d29f3a704e5d70800000000000000
-      internalID: 9033728796348569335
+      spriteID: 4570824146b453f30800000000000000
+      internalID: 4554629491362105172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_16
+      name: GJ_Stronger_Tiles_16
       rect:
         serializedVersion: 2
         x: 144
@@ -512,14 +515,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cb9bf74317ae6cf0800000000000000
-      internalID: -257084427459650621
+      spriteID: aff8d0e1be09f3c40800000000000000
+      internalID: 5494269409911214074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_17
+      name: GJ_Stronger_Tiles_17
       rect:
         serializedVersion: 2
         x: 278
@@ -533,14 +536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccfbc6d1882bb2430800000000000000
-      internalID: 3759294611649773516
+      spriteID: 721d797cda729a050800000000000000
+      internalID: 5812220421429776679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_18
+      name: GJ_Stronger_Tiles_18
       rect:
         serializedVersion: 2
         x: 411
@@ -554,14 +557,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a11875398537d6430800000000000000
-      internalID: 3777802486700015898
+      spriteID: 1d8b3db9385469ef0800000000000000
+      internalID: -101817510011881263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_19
+      name: GJ_Stronger_Tiles_19
       rect:
         serializedVersion: 2
         x: 546
@@ -575,14 +578,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a9b2482303887820800000000000000
-      internalID: 2916224808305998245
+      spriteID: 812c4753a1171d070800000000000000
+      internalID: 8129403159760388632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ_BrownVariationsS_Tiles_128_20
+      name: GJ_Stronger_Tiles_20
       rect:
         serializedVersion: 2
         x: 276
@@ -596,8 +599,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17aedf75b814037c0800000000000000
-      internalID: -4093699994547262863
+      spriteID: 553afe2879d045bc0800000000000000
+      internalID: -3795393641578519723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_Stronger_Tiles_21
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 12
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86d69cd5fc21e920800000000000000
+      internalID: 3017742659794425487
       vertices: []
       indices: 
       edges: []
@@ -605,7 +629,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c9bf11e9507eaa9439dee572c89f0d78
+    spriteID: b6d78272faa2c6a489dd1df61bca91e9
     internalID: 0
     vertices: []
     indices: 
