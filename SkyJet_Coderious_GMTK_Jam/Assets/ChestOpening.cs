@@ -15,6 +15,12 @@ public class ChestOpening : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         manager.isUnderControl = false;
+        manager.upKey.text = "";
+        manager.downKey.text = "";
+        manager.leftKey.text = "";
+        manager.rightKey.text = "";
+        manager.attackKey.text = "";
+
         enemy.SetActive(true);
         gameObject.SetActive(false);
     }

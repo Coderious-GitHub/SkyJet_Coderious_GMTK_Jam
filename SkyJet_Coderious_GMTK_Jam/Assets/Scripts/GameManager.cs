@@ -75,6 +75,12 @@ public class GameManager : MonoBehaviour
         xSpeed = 0;
         ySpeed = 0;
 
+        upKey.text = "W";
+        downKey.text = "S";
+        leftKey.text = "A";
+        rightKey.text = "D";
+
+
         DefineMovement();
     }
 
