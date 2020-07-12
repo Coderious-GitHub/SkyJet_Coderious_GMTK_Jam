@@ -29,7 +29,8 @@ public class EnemyGraphics : MonoBehaviour
         if (currentHealth < 0)
         {
             gameObject.transform.parent.gameObject.SetActive(false);
-            //Victory
+            Time.timeScale = 0;
+            manager.victoryPanel.SetActive(true);
         }
     }
 
