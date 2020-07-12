@@ -42,6 +42,9 @@ public class GameManager : MonoBehaviour
     };
 
     float movementSpeed = 2f;
+    public float xSpeed, ySpeed;
+    public bool hasAttacked = false;
+    public bool hasBlocked = true;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +64,9 @@ public class GameManager : MonoBehaviour
         commandPanel.SetActive(false);
 
         isScanned = false;
+
+        xSpeed = 0;
+        ySpeed = 0;
 
         DefineMovement();
     }
@@ -107,13 +113,13 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(inputs[block]) || (blockAssigned && Input.GetKeyDown(blockCommand)))
         {
-            //block action
+            hasBlocked = true;
             blockKey.text = inputs[block].ToString();
         }
 
         if (Input.GetKeyDown(inputs[attack]) || (attackAssigned && Input.GetKeyDown(attackCommand)))
         {
-            //attack action
+            hasAttacked = true;
             attackKey.text = inputs[attack].ToString();
         }
 
@@ -131,6 +137,8 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
+        xSpeed = movement.x * Time.fixedDeltaTime;
+        ySpeed = movement.y * Time.fixedDeltaTime;
         playerRb.MovePosition(playerRb.position + movement * Time.fixedDeltaTime);
     }
 

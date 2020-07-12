@@ -7,7 +7,7 @@ using Pathfinding;
 public class CreateLevel : MonoBehaviour
 {
     public Grid grid;
-    public Tilemap walls, walkableGround, obstacleGround;
+    public Tilemap walls, walkableGround, obstacleGround, exit;
     public Tile[] walkableFloorTiles, obstacleFloorTiles;
     public Tile wallTile, floorTile, exitTile;
 
