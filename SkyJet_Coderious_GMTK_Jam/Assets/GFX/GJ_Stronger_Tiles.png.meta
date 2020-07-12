@@ -273,9 +273,9 @@ TextureImporter:
       name: GJ_Stronger_Tiles_5
       rect:
         serializedVersion: 2
-        x: 7
+        x: 8
         y: 420
-        width: 129
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: GJ_Stronger_Tiles_6
       rect:
         serializedVersion: 2
-        x: 142
+        x: 143
         y: 419
-        width: 129
-        height: 129
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,7 +485,7 @@ TextureImporter:
         serializedVersion: 2
         x: 10
         y: 153
-        width: 129
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -588,10 +588,10 @@ TextureImporter:
       name: GJ_Stronger_Tiles_20
       rect:
         serializedVersion: 2
-        x: 276
-        y: 11
-        width: 128
-        height: 128
+        x: 275
+        y: 10
+        width: 129
+        height: 129
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -611,7 +611,7 @@ TextureImporter:
         serializedVersion: 2
         x: 413
         y: 12
-        width: 128
+        width: 129
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -629,7 +629,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b6d78272faa2c6a489dd1df61bca91e9
+    spriteID: b0014908d11a2f34ab05d419e7aeb4d3
     internalID: 0
     vertices: []
     indices: 
