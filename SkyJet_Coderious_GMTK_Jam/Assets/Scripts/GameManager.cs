@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Rigidbody2D playerRb;
-    public Light2D playerLight;
+    public Light2D playerLight, globalLight;
 
     public GameObject commandPanel;
 
@@ -47,8 +47,9 @@ public class GameManager : MonoBehaviour
     };
 
     public float movementSpeed = 2f;
-    public float xSpeed, ySpeed;
+    public float xSpeed, ySpeed, xLastSpeed, yLastSpeed;
     public bool hasAttacked = false;
+    public bool isMoving = false;
 
     public GameObject victoryPanel, gameOverPanel;
 
@@ -80,14 +81,33 @@ public class GameManager : MonoBehaviour
 
         xSpeed = 0;
         ySpeed = 0;
+        xLastSpeed = 0;
+        yLastSpeed = 0;
 
         upKey.text = "W";
         downKey.text = "S";
         leftKey.text = "A";
         rightKey.text = "D";
 
-
         DefineMovement();
+
+        if(GameData.instance.difficulty == 1)
+        {
+            globalLight.intensity = 0.25f;
+            timeLeft = 60f;
+        }
+
+        if (GameData.instance.difficulty == 2)
+        {
+            globalLight.intensity = 0.125f;
+            timeLeft = 45f;
+        }
+
+        if (GameData.instance.difficulty == 3)
+        {
+            globalLight.intensity = 0.0625f;
+            timeLeft = 30f;
+        }
     }
 
 
@@ -185,11 +205,27 @@ public class GameManager : MonoBehaviour
             movement.y = Input.GetAxis("Vertical") * movementSpeed;
         }
 
-        
-       
         if (!Input.anyKey)
         {
             movement = Vector2.zero;
+        }
+
+        xSpeed = movement.x * Time.deltaTime;
+        ySpeed = movement.y * Time.deltaTime;
+
+        if (xSpeed < 0.01f && xSpeed > -0.01f && ySpeed < 0.01f && ySpeed > -0.01f)
+        {
+            isMoving = false;
+        }
+        else
+        {
+            isMoving = true;
+        }
+
+        if (xSpeed != 0 || ySpeed != 0)
+        {
+            xLastSpeed = xSpeed;
+            yLastSpeed = ySpeed;
         }
 
         timeLeft -= Time.deltaTime;
@@ -202,8 +238,6 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        xSpeed = movement.x * Time.fixedDeltaTime;
-        ySpeed = movement.y * Time.fixedDeltaTime;
         playerRb.MovePosition(playerRb.position + movement * Time.fixedDeltaTime);
     }
 
@@ -321,7 +355,8 @@ public class GameManager : MonoBehaviour
     {
         foreach(Light2D light in lights)
         {
-            light.intensity = Mathf.Abs(Mathf.Cos(Time.realtimeSinceStartup)) / 4f + 0.25f;
+            light.intensity = Mathf.Abs(Mathf.Cos(Time.realtimeSinceStartup)) / (4f + 0.25f);
+            Debug.Log(light.intensity);
         }
     }
 

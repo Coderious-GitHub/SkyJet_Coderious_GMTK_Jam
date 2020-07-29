@@ -71,7 +71,7 @@ public class CreateLevel : MonoBehaviour
         {
             for (int j = height / 2 - 1; j >= -height / 2; j--)
             {
-                if(Random.Range(0, 30) < 2)
+                if(Random.Range(0, 30) < 3)
                 {
                     walkableGround.SetTile(new Vector3Int(i, j, 0), floorTiles[Random.Range(0, floorTiles.Length)]);
                 }

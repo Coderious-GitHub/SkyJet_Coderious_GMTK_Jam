@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetFloat("xSpeed", manager.xSpeed);
         animator.SetFloat("ySpeed", manager.ySpeed);
+        animator.SetFloat("xLastSpeed", manager.xLastSpeed);
+        animator.SetFloat("yLastSpeed", manager.yLastSpeed);
+        animator.SetBool("isMoving", manager.isMoving);
 
         if(manager.hasAttacked)
         {
@@ -49,15 +52,5 @@ public class PlayerMovement : MonoBehaviour
                 enemy.GetComponent<Transform>().parent.GetComponent<Transform>().Translate(newPos * 2f);
             }
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if(attackPoint == null)
-        {
-            return;
-        }
-
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }

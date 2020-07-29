@@ -45,7 +45,9 @@ public class NextRoom : MonoBehaviour
             offset = new Vector2(1, 0);
         }
 
-
+        levelCreator.walls.ClearAllTiles();
+        levelCreator.enterMap.ClearAllTiles();
+        levelCreator.exitMap.ClearAllTiles();
         levelCreator.InitWalls();
         levelCreator.InitGround();
 
@@ -56,7 +58,16 @@ public class NextRoom : MonoBehaviour
 
         manager.DefineMovement();
         manager.isScanned = false;
-        manager.timeLeft = 60f;
+
+        if(GameData.instance.difficulty == 1)
+            manager.timeLeft = 60f;
+
+        if (GameData.instance.difficulty == 2)
+            manager.timeLeft = 45f;
+
+        if (GameData.instance.difficulty == 3)
+            manager.timeLeft = 30f;
+
         manager.ResetCommandUIText();
 
     }

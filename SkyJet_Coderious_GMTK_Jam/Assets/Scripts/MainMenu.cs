@@ -1,12 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class MainMenu : MonoBehaviour
 {
 
     public GameObject mainMenu, instructions;
+    public TextMeshProUGUI difficulty;
+    //public Drop dropDown;
 
     private void Start()
     {
@@ -17,6 +19,22 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+
+        if (difficulty.text == "Easy")
+        {
+            GameData.instance.difficulty = 1;
+        }
+
+        if (difficulty.text == "Medium")
+        {
+            GameData.instance.difficulty = 2;
+        }
+
+        if (difficulty.text == "Difficult")
+        {
+            GameData.instance.difficulty = 3;
+        }
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

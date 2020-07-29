@@ -1,0 +1,2 @@
+Bug when already assigned key is assigned to another key
+add contextuel help

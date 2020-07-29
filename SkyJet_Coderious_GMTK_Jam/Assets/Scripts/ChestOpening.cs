@@ -25,6 +25,15 @@ public class ChestOpening : MonoBehaviour
 
         enemy.SetActive(true);
         gameObject.SetActive(false);
+
+        if(GameData.instance.difficulty == 1)
+            enemy.GetComponent<Pathfinding.AIPath>().maxSpeed = 0.25f;
+
+        if (GameData.instance.difficulty == 2)
+            enemy.GetComponent<Pathfinding.AIPath>().maxSpeed = 0.5f;
+
+        if (GameData.instance.difficulty == 3)
+            enemy.GetComponent<Pathfinding.AIPath>().maxSpeed = 0.75f;
     }
 
 }
